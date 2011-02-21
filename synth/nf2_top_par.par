@@ -1,0 +1,213 @@
+Release 10.1.03 par K.39 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+ecs-network::  Mon Feb 07 11:15:20 2011
+
+par -intstyle ise -ol high -w nf2_top.ncd nf2_top_par.ncd 
+
+
+Constraints file: nf2_top.pcf.
+Loading device for application Rf_Device from file '2vp50.nph' in environment /Xilinx/10.1/ISE.
+   "nf2_top" is an NCD, version 3.2, device xc2vp50, package ff1152, speed -7
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.400 Volts. (default - Range: 1.400 to 1.600 Volts)
+
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more information see the TSI report.
+
+Device speed data version:  "PRODUCTION 1.94 2008-07-25".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        8 out of 16     50%
+      Number of LOCed BUFGMUXs               8 out of 8     100%
+
+   Number of DCMs                            6 out of 8      75%
+   Number of External IOBs                 356 out of 692    51%
+      Number of LOCed IOBs                 356 out of 356   100%
+
+   Number of RAMB16s                        89 out of 232    38%
+   Number of SLICEs                      12638 out of 23616  53%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 45 secs 
+Finished initial Timing Analysis.  REAL time: 46 secs 
+
+Starting Router
+
+Phase 1: 103632 unrouted;       REAL time: 58 secs 
+
+Phase 2: 85421 unrouted;       REAL time: 1 mins 7 secs 
+
+Phase 3: 22597 unrouted;       REAL time: 1 mins 22 secs 
+
+Phase 4: 22597 unrouted; (1081232)      REAL time: 1 mins 23 secs 
+
+Phase 5: 23109 unrouted; (28079)      REAL time: 1 mins 39 secs 
+
+Phase 6: 23234 unrouted; (0)      REAL time: 1 mins 41 secs 
+
+Phase 7: 0 unrouted; (436)      REAL time: 2 mins 27 secs 
+
+Phase 8: 0 unrouted; (436)      REAL time: 2 mins 41 secs 
+
+Updating file: nf2_top_par.ncd with current fully routed design.
+
+Phase 9: 0 unrouted; (0)      REAL time: 4 mins 18 secs 
+
+Phase 10: 0 unrouted; (0)      REAL time: 4 mins 23 secs 
+
+Phase 11: 0 unrouted; (0)      REAL time: 4 mins 55 secs 
+
+
+Total REAL time to Router completion: 5 mins 2 secs 
+Total CPU time to Router completion: 5 mins 1 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|        core_clk_int |     BUFGMUX1P|Yes   | 8526 |  0.521     |  1.550      |
++---------------------+--------------+------+------+------------+-------------+
+|  rx_rgmii_0_clk_int |     BUFGMUX4S|Yes   |  235 |  0.329     |  1.508      |
++---------------------+--------------+------+------+------------+-------------+
+|  rx_rgmii_1_clk_int |     BUFGMUX6S|Yes   |  231 |  0.470     |  1.511      |
++---------------------+--------------+------+------+------------+-------------+
+|  rx_rgmii_2_clk_int |     BUFGMUX5S|Yes   |  234 |  0.476     |  1.510      |
++---------------------+--------------+------+------+------------+-------------+
+|  rx_rgmii_3_clk_int |     BUFGMUX7S|Yes   |  225 |  0.302     |  1.509      |
++---------------------+--------------+------+------+------------+-------------+
+|        cpci_clk_int |     BUFGMUX0S|Yes   |  404 |  0.425     |  1.551      |
++---------------------+--------------+------+------+------------+-------------+
+|    tx_rgmii_clk_int |     BUFGMUX2S|Yes   |  665 |  0.499     |  1.537      |
++---------------------+--------------+------+------+------------+-------------+
+|  tx_rgmii_clk90_int |     BUFGMUX3P|Yes   |    8 |  0.136     |  1.517      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  TS_core_clk_int = PERIOD TIMEGRP "core_cl | SETUP   |     0.000ns|     8.000ns|       0|           0
+  k_int" 8 ns HIGH 50%                      | HOLD    |     0.339ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  TS_tx_clk_gmii = PERIOD TIMEGRP "tx_clock | SETUP   |     0.029ns|     7.971ns|       0|           0
+  _gmii" 8 ns HIGH 50%                      | HOLD    |     0.342ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  TS_rx_clk = PERIOD TIMEGRP "rx_clock" 8 n | SETUP   |     0.110ns|     7.890ns|       0|           0
+  s HIGH 50%                                | HOLD    |     0.219ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  TS_rgmii_falling_to_rising = MAXDELAY FRO | SETUP   |     1.116ns|     2.084ns|       0|           0
+  M TIMEGRP "rgmii_falling" TO TIMEGRP      |         |            |            |        |            
+      "rgmii_rising" 3.2 ns                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_cpci_clk = PERIOD TIMEGRP "cpci_clk" 1 | SETUP   |     1.134ns|    14.866ns|       0|           0
+  6 ns HIGH 50%                             | HOLD    |     0.498ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "CPCI_ADDR" OFFSET = IN 4 ns BEFO | SETUP   |     1.135ns|     2.865ns|       0|           0
+  RE COMP "cpci_clk"                        |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "CPCI_WR_DATA" OFFSET = IN 4 ns B | SETUP   |     1.147ns|     2.853ns|       0|           0
+  EFORE COMP "cpci_clk"                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "CPCI_DMA_INOUT" OFFSET = IN 4 ns | SETUP   |     1.233ns|     2.767ns|       0|           0
+   BEFORE COMP "cpci_clk"                   |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "CPCI_DMA_IN" OFFSET = IN 4 ns BE | SETUP   |     1.272ns|     2.728ns|       0|           0
+  FORE COMP "cpci_clk"                      |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "CPCI_REQ" OFFSET = IN 4 ns BEFOR | SETUP   |     1.316ns|     2.684ns|       0|           0
+  E COMP "cpci_clk"                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "SRAM1_DATA" OFFSET = OUT 4 ns AF | MAXDELAY|     1.701ns|     2.299ns|       0|           0
+  TER COMP "core_clk"                       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "SRAM2_DATA" OFFSET = OUT 4 ns AF | MAXDELAY|     1.717ns|     2.283ns|       0|           0
+  TER COMP "core_clk"                       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "SRAM1_OUT" OFFSET = OUT 4 ns AFT | MAXDELAY|     1.740ns|     2.260ns|       0|           0
+  ER COMP "core_clk"                        |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "SRAM2_OUT" OFFSET = OUT 4 ns AFT | MAXDELAY|     1.775ns|     2.225ns|       0|           0
+  ER COMP "core_clk"                        |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET "rgmii_0_rxc_ibuf" MAXDELAY = 2.5 ns  | MAXDELAY|     1.897ns|     0.603ns|       0|           0
+------------------------------------------------------------------------------------------------------
+  NET "rgmii_2_rxc_ibuf" MAXDELAY = 2.5 ns  | MAXDELAY|     1.912ns|     0.588ns|       0|           0
+------------------------------------------------------------------------------------------------------
+  NET "rgmii_3_rxc_ibuf" MAXDELAY = 2.5 ns  | MAXDELAY|     2.034ns|     0.466ns|       0|           0
+------------------------------------------------------------------------------------------------------
+  NET "rgmii_1_rxc_ibuf" MAXDELAY = 2.5 ns  | MAXDELAY|     2.034ns|     0.466ns|       0|           0
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "SRAM2_DATA" OFFSET = IN 4 ns BEF | SETUP   |     2.266ns|     1.734ns|       0|           0
+  ORE COMP "core_clk"                       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "SRAM1_DATA" OFFSET = IN 4 ns BEF | SETUP   |     2.269ns|     1.731ns|       0|           0
+  ORE COMP "core_clk"                       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "CPCI_DMA_INOUT" OFFSET = OUT 7 n | MAXDELAY|     2.311ns|     4.689ns|       0|           0
+  s AFTER COMP "cpci_clk"                   |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "CPCI_RDY" OFFSET = OUT 8 ns AFTE | MAXDELAY|     3.350ns|     4.650ns|       0|           0
+  R COMP "cpci_clk"                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "CPCI_DMA_OUT" OFFSET = OUT 8 ns  | MAXDELAY|     3.359ns|     4.641ns|       0|           0
+  AFTER COMP "cpci_clk"                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TIMEGRP "CPCI_DATA" OFFSET = OUT 10 ns AF | MAXDELAY|     5.370ns|     4.630ns|       0|           0
+  TER COMP "cpci_clk"                       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 5 mins 18 secs 
+Total CPU time to PAR completion: 5 mins 14 secs 
+
+Peak Memory Usage:  1319 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file nf2_top_par.ncd
+
+
+
+PAR done!

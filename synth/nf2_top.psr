@@ -1,0 +1,33 @@
+Release 10.1.03 Physical Synthesis Report K.39 (lin64)
+Copyright (c) 1995-2007 Xilinx, Inc. All rights reserved.
+
+TABLE OF CONTENTS
+  1) Physical Synthesis Options Summary
+  2) Optimizations statistics and details
+
+
+=========================================================================
+*                 Physical Synthesis Options Summary                    *
+=========================================================================
+---- Options
+Global Optimization                 : OFF
+    Retiming                        : OFF
+    Equivalent Register Removal     : OFF
+Timing-Driven Packing and Placement : ON
+    Logic Optimization              : OFF
+    Register Duplication            : ON
+
+---- Target Parameters
+Target Device                       : 2vp50ff1152-7
+
+=========================================================================
+
+
+=========================================================================
+*                        Optimizations                                  *
+=========================================================================
+---- Statistics
+No sequential optimizations have been performed.
+
+
+

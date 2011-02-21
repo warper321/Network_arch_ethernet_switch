@@ -1,0 +1,6 @@
+CommandLine
+/Xilinx/10.1/ISE/bin/lin64/unwrapped/xst -intstyle ise -ifn nf2_top.scr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

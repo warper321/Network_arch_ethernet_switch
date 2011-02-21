@@ -1,0 +1,759 @@
+Release 10.1.03 - Bitgen K.39 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Loading device for application Rf_Device from file '2vp50.nph' in environment
+/Xilinx/10.1/ISE.
+   "nf2_top" is an NCD, version 3.2, device xc2vp50, package ff1152, speed -7
+
+Mon Feb  7 11:21:50 2011
+
+/Xilinx/10.1/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -g Binary:No -w nf2_top_par.ncd 
+
+Summary of Bitgen Options:
++----------------------+----------------------+
+| Option Name          | Current Setting      |
++----------------------+----------------------+
+| Compress             | (Not Specified)*     |
++----------------------+----------------------+
+| Readback             | (Not Specified)*     |
++----------------------+----------------------+
+| CRC                  | Enable*              |
++----------------------+----------------------+
+| DebugBitstream       | No*                  |
++----------------------+----------------------+
+| ConfigRate           | 4*                   |
++----------------------+----------------------+
+| StartupClk           | Cclk*                |
++----------------------+----------------------+
+| DCMShutdown          | Disable*             |
++----------------------+----------------------+
+| DisableBandgap       | No*                  |
++----------------------+----------------------+
+| CclkPin              | Pullup*              |
++----------------------+----------------------+
+| DonePin              | Pullup*              |
++----------------------+----------------------+
+| HswapenPin           | Pullup*              |
++----------------------+----------------------+
+| M0Pin                | Pullup*              |
++----------------------+----------------------+
+| M1Pin                | Pullup*              |
++----------------------+----------------------+
+| M2Pin                | Pullup*              |
++----------------------+----------------------+
+| PowerdownPin         | Pullup*              |
++----------------------+----------------------+
+| ProgPin              | Pullup*              |
++----------------------+----------------------+
+| TckPin               | Pullup*              |
++----------------------+----------------------+
+| TdiPin               | Pullup*              |
++----------------------+----------------------+
+| TdoPin               | Pullup*              |
++----------------------+----------------------+
+| TmsPin               | Pullup*              |
++----------------------+----------------------+
+| UnusedPin            | Pulldown*            |
++----------------------+----------------------+
+| GWE_cycle            | 6*                   |
++----------------------+----------------------+
+| GTS_cycle            | 5*                   |
++----------------------+----------------------+
+| LCK_cycle            | NoWait*              |
++----------------------+----------------------+
+| Match_cycle          | NoWait               |
++----------------------+----------------------+
+| DONE_cycle           | 4*                   |
++----------------------+----------------------+
+| Persist              | No*                  |
++----------------------+----------------------+
+| DriveDone            | No*                  |
++----------------------+----------------------+
+| DonePipe             | No*                  |
++----------------------+----------------------+
+| Security             | None*                |
++----------------------+----------------------+
+| UserID               | 0xFFFFFFFF*          |
++----------------------+----------------------+
+| ActivateGclk         | No*                  |
++----------------------+----------------------+
+| ActiveReconfig       | No*                  |
++----------------------+----------------------+
+| PartialMask0         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialMask1         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialMask2         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialGclk          | (Not Specified)*     |
++----------------------+----------------------+
+| PartialLeft          | (Not Specified)*     |
++----------------------+----------------------+
+| PartialRight         | (Not Specified)*     |
++----------------------+----------------------+
+| Encrypt              | No*                  |
++----------------------+----------------------+
+| Key0                 | pick*                |
++----------------------+----------------------+
+| Key1                 | pick*                |
++----------------------+----------------------+
+| Key2                 | pick*                |
++----------------------+----------------------+
+| Key3                 | pick*                |
++----------------------+----------------------+
+| Key4                 | pick*                |
++----------------------+----------------------+
+| Key5                 | pick*                |
++----------------------+----------------------+
+| Keyseq0              | M*                   |
++----------------------+----------------------+
+| Keyseq1              | M*                   |
++----------------------+----------------------+
+| Keyseq2              | M*                   |
++----------------------+----------------------+
+| Keyseq3              | M*                   |
++----------------------+----------------------+
+| Keyseq4              | M*                   |
++----------------------+----------------------+
+| Keyseq5              | M*                   |
++----------------------+----------------------+
+| KeyFile              | (Not Specified)*     |
++----------------------+----------------------+
+| StartKey             | 0*                   |
++----------------------+----------------------+
+| StartCBC             | pick*                |
++----------------------+----------------------+
+| FreezeDCI            | No*                  |
++----------------------+----------------------+
+| DCIUpdateMode        | AsRequired*          |
++----------------------+----------------------+
+| IEEE1532             | No*                  |
++----------------------+----------------------+
+| Binary               | No**                 |
++----------------------+----------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+Running DRC.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[0].ram.r/v2.ram/dp18x36.ram.A>:<RAMB16_RAMB16A>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[0].ram.r/v2.ram/dp18x36.ram.A>:<RAMB16_RAMB16A>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[0].ram.r/v2.ram/dp18x36.ram.A>:<RAMB16_RAMB16A>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[0].ram.r/v2.ram/dp18x36.ram.A>:<RAMB16_RAMB16A>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[0].ram.r/v2.ram/dp36x18.ram.B>:<RAMB16_RAMB16B>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[0].ram.r/v2.ram/dp36x18.ram.B>:<RAMB16_RAMB16B>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[0].ram.r/v2.ram/dp36x18.ram.B>:<RAMB16_RAMB16B>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[0].ram.r/v2.ram/dp36x18.ram.B>:<RAMB16_RAMB16B>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.
+   bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB
+   16_RAMB16A>.  The block is configured to use input parity pins. There are
+   dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[7].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[6].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[5].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[4].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[3].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[2].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[1].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[0].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_in_q_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[1].ram.r/v2.ram/dp18x36.ram.A>:<RAMB16_RAMB16A>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[1].ram.r/v2.ram/dp18x36.ram.A>:<RAMB16_RAMB16A>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[1].ram.r/v2.ram/dp18x36.ram.A>:<RAMB16_RAMB16A>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[1].ram.r/v2.ram/dp18x36.ram.A>:<RAMB16_RAMB16A>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[1].ram.r/v2.ram/dp36x18.ram.B>:<RAMB16_RAMB16B>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[1].ram.r/v2.ram/dp36x18.ram.B>:<RAMB16_RAMB16B>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[1].ram.r/v2.ram/dp36x18.ram.B>:<RAMB16_RAMB16B>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx
+   _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
+   /ramloop[1].ram.r/v2.ram/dp36x18.ram.B>:<RAMB16_RAMB16B>.  The block is
+   configured to use input parity pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[7].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[1].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[6].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[1].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[5].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[1].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[4].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[1].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[3].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[1].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[2].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[1].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[1].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[1].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_
+   fifos[0].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_gene
+   rator/valid.cstr/ramloop[1].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _lo_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
+   ds_left_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/input_fifo/fifo/Mram_queue1.A>:<
+   RAMB16_RAMB16A>.  The block is configured to use input parity pins. There are
+   dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/output_queues/input_fifo/fifo/Mram_queue2.A>:<
+   RAMB16_RAMB16A>.  The block is configured to use input parity pins. There are
+   dangling output parity pins.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_a
+   ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
+   _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB24> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB25> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB26> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
+   _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
+DRC detected 0 errors and 178 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
+Creating bit map...
+Saving bit stream in "nf2_top_par.bit".
+Bitstream generation is complete.

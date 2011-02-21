@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="lin64" product="ISE" version="10.1.03">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="NgdBuild" timeStamp="Mon Feb  7 11:08:26 2011">
+    <task stringID="NGDBUILD_REPORT">
+      <section stringID="NGDBUILD_DESIGN_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="862"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
+      </section>
+      <section stringID="NGDBUILD_CORE_SUMMARY">
+        <item COUNT="4" stringID="NGDBUILD_CORE" value="fifo_generator_v3_2, Xilinx CORE Generator 10.1.03_ip3"/>
+        <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
+          <section stringID="NGDBUILD_CORE_INSTANCES">
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="cdq_rx_fifo_512x36_to_72">
+              <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v4_2" value="cdq_rx_fifo_512x36_to_72"/>
+              <item c_common_clock="0" c_data_count_width="10" c_din_width="36" c_dout_rst_val="0" c_dout_width="72" c_full_flags_rst_val="1" c_has_almost_empty="0" c_has_almost_full="1" c_has_data_count="0" c_has_int_clk="0" c_has_overflow="0" c_has_rd_data_count="0" c_has_rst="1" c_has_srst="0" c_has_underflow="0" c_has_valid="0" c_has_wr_ack="0" c_has_wr_data_count="0" c_implementation_type="2" c_memory_type="1" c_overflow_low="0" c_preload_latency="0" c_preload_regs="1" c_prim_fifo_type="1kx36" c_prog_empty_thresh_assert_val="4" c_prog_empty_thresh_negate_val="5" c_prog_empty_type="0" c_prog_full_thresh_assert_val="527" c_prog_full_thresh_negate_val="526" c_prog_full_type="1" c_rd_data_count_width="8" c_rd_depth="512" c_rd_freq="125" c_rd_pntr_width="9" c_underflow_low="0" c_use_dout_rst="1" c_use_ecc="0" c_use_embedded_reg="0" c_use_fwft_data_count="1" c_valid_low="0" c_wr_ack_low="0" c_wr_data_count_width="9" c_wr_depth="1024" c_wr_freq="125" c_wr_pntr_width="10" component_name="cdq_rx_fifo_512x36_to_72" stringID="NGDBUILD_CORE_PARAMETERS" value="cdq_rx_fifo_512x36_to_72"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="cdq_tx_fifo_256x72_to_36">
+              <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v4_2" value="cdq_tx_fifo_256x72_to_36"/>
+              <item c_common_clock="0" c_data_count_width="9" c_din_width="72" c_dout_rst_val="0" c_dout_width="36" c_full_flags_rst_val="1" c_has_almost_empty="0" c_has_almost_full="1" c_has_data_count="0" c_has_int_clk="0" c_has_overflow="0" c_has_rd_data_count="0" c_has_rst="1" c_has_srst="0" c_has_underflow="0" c_has_valid="0" c_has_wr_ack="0" c_has_wr_data_count="0" c_implementation_type="2" c_memory_type="1" c_overflow_low="0" c_preload_latency="0" c_preload_regs="1" c_prim_fifo_type="512x72" c_prog_empty_thresh_assert_val="4" c_prog_empty_thresh_negate_val="5" c_prog_empty_type="0" c_prog_full_thresh_assert_val="253" c_prog_full_thresh_negate_val="252" c_prog_full_type="0" c_rd_data_count_width="9" c_rd_depth="512" c_rd_freq="125" c_rd_pntr_width="9" c_underflow_low="0" c_use_dout_rst="1" c_use_ecc="0" c_use_embedded_reg="0" c_use_fwft_data_count="1" c_valid_low="0" c_wr_ack_low="0" c_wr_data_count_width="8" c_wr_depth="256" c_wr_freq="125" c_wr_pntr_width="8" component_name="cdq_tx_fifo_256x72_to_36" stringID="NGDBUILD_CORE_PARAMETERS" value="cdq_tx_fifo_256x72_to_36"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="net2pci_16x32">
+              <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v4_2" value="net2pci_16x32"/>
+              <item c_common_clock="0" c_data_count_width="4" c_din_width="32" c_dout_rst_val="0" c_dout_width="32" c_full_flags_rst_val="1" c_has_almost_empty="0" c_has_almost_full="1" c_has_data_count="0" c_has_int_clk="0" c_has_overflow="0" c_has_rd_data_count="0" c_has_rst="1" c_has_srst="0" c_has_underflow="0" c_has_valid="0" c_has_wr_ack="0" c_has_wr_data_count="0" c_implementation_type="2" c_memory_type="1" c_overflow_low="0" c_preload_latency="0" c_preload_regs="1" c_prim_fifo_type="512x36" c_prog_empty_thresh_assert_val="4" c_prog_empty_thresh_negate_val="5" c_prog_empty_type="0" c_prog_full_thresh_assert_val="14" c_prog_full_thresh_negate_val="13" c_prog_full_type="0" c_rd_data_count_width="4" c_rd_depth="16" c_rd_freq="66" c_rd_pntr_width="4" c_underflow_low="0" c_use_dout_rst="1" c_use_ecc="0" c_use_embedded_reg="0" c_use_fwft_data_count="0" c_valid_low="0" c_wr_ack_low="0" c_wr_data_count_width="4" c_wr_depth="16" c_wr_freq="125" c_wr_pntr_width="4" component_name="net2pci_16x32" stringID="NGDBUILD_CORE_PARAMETERS" value="net2pci_16x32"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="pci2net_16x60">
+              <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v4_2" value="pci2net_16x60"/>
+              <item c_common_clock="0" c_data_count_width="4" c_din_width="60" c_dout_rst_val="0" c_dout_width="60" c_full_flags_rst_val="1" c_has_almost_empty="0" c_has_almost_full="1" c_has_data_count="0" c_has_int_clk="0" c_has_overflow="0" c_has_rd_data_count="0" c_has_rst="1" c_has_srst="0" c_has_underflow="0" c_has_valid="0" c_has_wr_ack="0" c_has_wr_data_count="0" c_implementation_type="2" c_memory_type="1" c_overflow_low="0" c_preload_latency="1" c_preload_regs="0" c_prim_fifo_type="512x72" c_prog_empty_thresh_assert_val="2" c_prog_empty_thresh_negate_val="3" c_prog_empty_type="0" c_prog_full_thresh_assert_val="10" c_prog_full_thresh_negate_val="9" c_prog_full_type="1" c_rd_data_count_width="4" c_rd_depth="16" c_rd_freq="125" c_rd_pntr_width="4" c_underflow_low="0" c_use_dout_rst="1" c_use_ecc="0" c_use_embedded_reg="0" c_use_fwft_data_count="0" c_valid_low="0" c_wr_ack_low="0" c_wr_data_count_width="4" c_wr_depth="16" c_wr_freq="66" c_wr_pntr_width="4" component_name="pci2net_16x60" stringID="NGDBUILD_CORE_PARAMETERS" value="pci2net_16x60"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="rxfifo_8kx9_to_72">
+              <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v3_2" value="rxfifo_8kx9_to_72"/>
+              <item c_common_clock="0" c_data_count_width="10" c_din_width="9" c_dout_rst_val="0" c_dout_width="72" c_has_almost_empty="0" c_has_almost_full="0" c_has_data_count="0" c_has_overflow="0" c_has_rd_data_count="0" c_has_rst="1" c_has_srst="0" c_has_underflow="0" c_has_valid="0" c_has_wr_ack="0" c_has_wr_data_count="0" c_implementation_type="2" c_memory_type="1" c_overflow_low="0" c_preload_latency="1" c_preload_regs="0" c_prim_fifo_type="4kx9" c_prog_empty_thresh_assert_val="9" c_prog_empty_thresh_negate_val="10" c_prog_empty_type="0" c_prog_full_thresh_assert_val="6100" c_prog_full_thresh_negate_val="6099" c_prog_full_type="1" c_rd_data_count_width="10" c_rd_depth="1024" c_rd_freq="100" c_rd_pntr_width="10" c_underflow_low="0" c_valid_low="0" c_wr_ack_low="0" c_wr_data_count_width="10" c_wr_depth="8192" c_wr_freq="100" c_wr_pntr_width="13" component_name="rxfifo_8kx9_to_72" stringID="NGDBUILD_CORE_PARAMETERS" value="rxfifo_8kx9_to_72"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="rxlengthfifo_128x13">
+              <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v4_2" value="rxlengthfifo_128x13"/>
+              <item c_common_clock="0" c_data_count_width="2" c_din_width="13" c_dout_rst_val="0" c_dout_width="13" c_full_flags_rst_val="1" c_has_almost_empty="0" c_has_almost_full="0" c_has_data_count="0" c_has_int_clk="0" c_has_overflow="0" c_has_rd_data_count="0" c_has_rst="1" c_has_srst="0" c_has_underflow="0" c_has_valid="0" c_has_wr_ack="0" c_has_wr_data_count="0" c_implementation_type="2" c_memory_type="1" c_overflow_low="0" c_preload_latency="1" c_preload_regs="0" c_prim_fifo_type="512x36" c_prog_empty_thresh_assert_val="5" c_prog_empty_thresh_negate_val="6" c_prog_empty_type="0" c_prog_full_thresh_assert_val="125" c_prog_full_thresh_negate_val="124" c_prog_full_type="0" c_rd_data_count_width="2" c_rd_depth="128" c_rd_freq="125" c_rd_pntr_width="7" c_underflow_low="0" c_use_dout_rst="1" c_use_ecc="0" c_use_embedded_reg="0" c_use_fwft_data_count="0" c_valid_low="0" c_wr_ack_low="0" c_wr_data_count_width="2" c_wr_depth="128" c_wr_freq="125" c_wr_pntr_width="7" component_name="rxlengthfifo_128x13" stringID="NGDBUILD_CORE_PARAMETERS" value="rxlengthfifo_128x13"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="syncfifo_512x72">
+              <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v4_2" value="syncfifo_512x72"/>
+              <item c_common_clock="1" c_data_count_width="9" c_din_width="72" c_dout_rst_val="0" c_dout_width="72" c_full_flags_rst_val="1" c_has_almost_empty="0" c_has_almost_full="0" c_has_data_count="0" c_has_int_clk="0" c_has_overflow="0" c_has_rd_data_count="0" c_has_rst="1" c_has_srst="0" c_has_underflow="0" c_has_valid="0" c_has_wr_ack="0" c_has_wr_data_count="0" c_implementation_type="0" c_memory_type="1" c_overflow_low="0" c_preload_latency="1" c_preload_regs="0" c_prim_fifo_type="512x72" c_prog_empty_thresh_assert_val="5" c_prog_empty_thresh_negate_val="6" c_prog_empty_type="0" c_prog_full_thresh_assert_val="510" c_prog_full_thresh_negate_val="509" c_prog_full_type="0" c_rd_data_count_width="9" c_rd_depth="512" c_rd_freq="100" c_rd_pntr_width="9" c_underflow_low="0" c_use_dout_rst="1" c_use_ecc="0" c_use_embedded_reg="0" c_use_fwft_data_count="0" c_valid_low="0" c_wr_ack_low="0" c_wr_data_count_width="9" c_wr_depth="512" c_wr_freq="100" c_wr_pntr_width="9" component_name="syncfifo_512x72" stringID="NGDBUILD_CORE_PARAMETERS" value="syncfifo_512x72"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="txfifo_512x72_to_9">
+              <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v4_2" value="txfifo_512x72_to_9"/>
+              <item c_common_clock="0" c_data_count_width="9" c_din_width="72" c_dout_rst_val="0" c_dout_width="9" c_full_flags_rst_val="1" c_has_almost_empty="0" c_has_almost_full="1" c_has_data_count="0" c_has_int_clk="0" c_has_overflow="0" c_has_rd_data_count="0" c_has_rst="1" c_has_srst="0" c_has_underflow="0" c_has_valid="0" c_has_wr_ack="0" c_has_wr_data_count="0" c_implementation_type="2" c_memory_type="1" c_overflow_low="0" c_preload_latency="1" c_preload_regs="0" c_prim_fifo_type="512x72" c_prog_empty_thresh_assert_val="9" c_prog_empty_thresh_negate_val="10" c_prog_empty_type="0" c_prog_full_thresh_assert_val="509" c_prog_full_thresh_negate_val="508" c_prog_full_type="0" c_rd_data_count_width="9" c_rd_depth="4096" c_rd_freq="100" c_rd_pntr_width="12" c_underflow_low="0" c_use_dout_rst="1" c_use_ecc="0" c_use_embedded_reg="0" c_use_fwft_data_count="0" c_valid_low="0" c_wr_ack_low="0" c_wr_data_count_width="9" c_wr_depth="512" c_wr_freq="100" c_wr_pntr_width="9" component_name="txfifo_512x72_to_9" stringID="NGDBUILD_CORE_PARAMETERS" value="txfifo_512x72_to_9"/>
+            </scope>
+          </section>
+        </section>
+      </section>
+    </task>
+  </application>
+
+</document>

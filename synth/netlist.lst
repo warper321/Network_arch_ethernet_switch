@@ -1,0 +1,10 @@
+/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/nf2_top.ngc 1297105685
+/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/syncfifo_512x72.ngc 1297105366
+/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/cdq_tx_fifo_256x72_to_36.ngc 1297104845
+/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/cdq_rx_fifo_512x36_to_72.ngc 1297104782
+/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/txfifo_512x72_to_9.ngc 1297105076
+/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/rxfifo_8kx9_to_72.ngc 1297104980
+/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/rxlengthfifo_128x13.ngc 1297105004
+/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/pci2net_16x60.ngc 1297105131
+/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/net2pci_16x32.ngc 1297105099
+OK

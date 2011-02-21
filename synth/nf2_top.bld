@@ -1,0 +1,2164 @@
+Release 10.1.03 ngdbuild K.39 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: /Xilinx/10.1/ISE/bin/lin64/unwrapped/ngdbuild -intstyle ise
+nf2_top
+
+Reading NGO file
+"/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/nf2_top.ngc" ...
+Loading design module
+"/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/syncfifo_512x72.ngc
+"...
+Loading design module
+"/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/cdq_tx_fifo_256x72_
+to_36.ngc"...
+Loading design module
+"/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/cdq_rx_fifo_512x36_
+to_72.ngc"...
+Loading design module
+"/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/txfifo_512x72_to_9.
+ngc"...
+Loading design module
+"/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/rxfifo_8kx9_to_72.n
+gc"...
+Loading design module
+"/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/rxlengthfifo_128x13
+.ngc"...
+Loading design module
+"/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/pci2net_16x60.ngc".
+..
+Loading design module
+"/exports/homes/mbruckel/netfpga/projects/ethernet_hub/synth/net2pci_16x32.ngc".
+..
+Gathering constraint information from source properties...
+Done.
+
+Applying constraints in "nf2_top.ucf" to the design...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_flow_rx_to_tx" = FROM
+   "flow_rx_to_tx" TO "tx_clock_gmii" 8000 ps DATAPATHONLY;>
+   [nf2_top.ucf(1137)]: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
+   or 'TPThru' constraint named 'flow_rx_to_tx'.
+
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(100)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(101)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(102)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(103)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(104)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(105)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(106)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(107)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(108)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(109)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(110)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(111)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(112)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(113)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(114)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(115)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(116)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(117)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(118)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(119)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(120)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(121)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(122)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(123)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(124)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(125)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(126)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(127)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(32)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(33)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(34)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(35)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(36)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(37)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(38)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(39)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(40)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(41)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(42)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(43)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(44)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(45)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(46)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(47)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(48)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(49)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(50)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(51)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(52)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(53)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(54)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(55)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(56)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(57)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(58)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(59)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(60)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(61)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(62)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(63)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(80)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(81)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(82)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(83)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(84)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(85)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(86)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(87)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(88)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(89)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(90)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(91)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(92)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(93)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(94)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(95)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(96)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(97)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(98)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_addr(99)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_rd_wr_L(0)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_rd_wr_L(2)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_rd_wr_L(3)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_rd_wr_L(5)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_rd_wr_L(6)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_rd_wr_L(7)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(0)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(1)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(10)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(100)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(101)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(102)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(103)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(104)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(105)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(106)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(107)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(108)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(109)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(11)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(110)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(111)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(112)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(113)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(114)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(115)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(116)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(117)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(118)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(119)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(12)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(120)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(121)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(122)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(123)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(124)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(125)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(126)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(127)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(13)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(14)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(15)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(16)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(160)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(161)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(162)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(163)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(164)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(165)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(166)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(167)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(168)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(169)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(17)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(170)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(171)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(172)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(173)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(174)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(175)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(176)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(177)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(178)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(179)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(18)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(180)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(181)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(182)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(183)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(184)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(185)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(186)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(187)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(188)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(189)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(19)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(190)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(191)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(192)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(193)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(194)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(195)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(196)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(197)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(198)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(199)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(2)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(20)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(200)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(201)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(202)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(203)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(204)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(205)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(206)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(207)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(208)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(209)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(21)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(210)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(211)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(212)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(213)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(214)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(215)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(216)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(217)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(218)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(219)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(22)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(220)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(221)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(222)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(223)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(224)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(225)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(226)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(227)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(228)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(229)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(23)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(230)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(231)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(232)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(233)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(234)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(235)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(236)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(237)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(238)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(239)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(24)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(240)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(241)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(242)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(243)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(244)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(245)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(246)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(247)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(248)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(249)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(25)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(250)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(251)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(252)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(253)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(254)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(255)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(26)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(27)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(28)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(29)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(3)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(30)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(31)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(4)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(48)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(49)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(5)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(50)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(51)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(52)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(53)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(54)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(55)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(56)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(57)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(58)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(59)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(6)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(60)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(61)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(62)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(63)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(64)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(65)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(66)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(67)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(68)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(69)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(7)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(70)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(71)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(72)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(73)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(74)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(75)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(76)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(77)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(78)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(79)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(8)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(80)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(81)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(82)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(83)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(84)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(85)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(86)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(87)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(88)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(89)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(9)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(90)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(91)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(92)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(93)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(94)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(95)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(96)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(97)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(98)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_256kb_0_reg_wr_data(99)' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(0)' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(1)' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(10)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(11)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(12)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(13)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(14)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(15)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(16)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(17)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(18)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(19)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(2)' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(3)' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(4)' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(40)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(41)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(42)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(43)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(44)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(45)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(46)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(47)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(48)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(49)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(5)' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(50)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(51)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(52)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(53)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(54)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(55)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(56)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(57)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(58)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(59)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(6)' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(60)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(61)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(62)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(63)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(64)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(65)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(66)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(67)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(68)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(69)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(7)' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(70)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(71)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(72)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(73)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(74)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(75)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(76)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(77)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(78)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(79)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(8)' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_addr(9)' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_rd_wr_L(0)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_rd_wr_L(2)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_rd_wr_L(3)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(0)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(1)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(10)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(100)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(101)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(102)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(103)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(104)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(105)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(106)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(107)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(108)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(109)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(11)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(110)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(111)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(112)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(113)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(114)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(115)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(116)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(117)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(118)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(119)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(12)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(120)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(121)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(122)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(123)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(124)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(125)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(126)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(127)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(13)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(14)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(15)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(16)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(17)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(18)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(19)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(2)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(20)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(21)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(22)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(23)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(24)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(25)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(26)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(27)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(28)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(29)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(3)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(30)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(31)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(4)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(5)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(6)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(64)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(65)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(66)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(67)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(68)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(69)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(7)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(70)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(71)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(72)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(73)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(74)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(75)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(76)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(77)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(78)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(79)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(8)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(80)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(81)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(82)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(83)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(84)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(85)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(86)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(87)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(88)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(89)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(9)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(90)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(91)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(92)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(93)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(94)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(95)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(96)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(97)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(98)' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/core_4mb_reg_wr_data(99)' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/nf2_dma/sys_rxfifo_wr_valid_bytes(0)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/nf2_dma/sys_rxfifo_wr_valid_bytes(1)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/input_fifo/full' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_header_parser/dst_oq_fifo/nearly_fu
+   ll' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_header_parser/dst_oq_fifo/prog_full
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(16)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(17)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(18)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(19)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(20)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(21)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(22)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(23)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(24)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(25)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(26)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(27)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(28)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(29)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(30)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(31)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(19)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(20)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(21)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(22)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(23)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(24)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(25)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(26)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(27)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(28)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(29)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(30)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(31)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(19)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(20)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(21)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(22)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(23)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(24)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(25)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(26)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(27)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(28)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(29)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(30)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr_data(31)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(19)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(20)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(21)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(22)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(23)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(24)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(25)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(26)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(27)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(28)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(29)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(30)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(31)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(19)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(20)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(21)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(22)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(23)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(24)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(25)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(26)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(27)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(28)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(29)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(30)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_wr_data(31)
+   ' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(19)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(20)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(21)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(22)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(23)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(24)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(25)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(26)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(27)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(28)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(29)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(30)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(31)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(19)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(20)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(21)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(22)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(23)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(24)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(25)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(26)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(27)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(28)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(29)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(30)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(31)'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_q_dma_rd_rdy' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/pkt_len_fifo/nearly_
+   full' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/pkt_len_fifo/prog_fu
+   ll' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_rx_queue/pkt_len_fifo/full'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_q_dma_rd_rdy' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_tx_queue/pkt_len_fifo/nearly_
+   full' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_tx_queue/pkt_len_fifo/prog_fu
+   ll' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/pkt_len_fifo/full'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_q_dma_rd_rdy' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/pkt_len_fifo/nearly_
+   full' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/pkt_len_fifo/prog_fu
+   ll' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/pkt_len_fifo/full'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_q_dma_rd_rdy' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/pkt_len_fifo/full'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_tx_queue/pkt_len_fifo/nearly_
+   full' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_tx_queue/pkt_len_fifo/prog_fu
+   ll' has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/mac_groups[3].nf2_mac_grp/gmii_col'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/mac_groups[3].nf2_mac_grp/gmii_crs'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx_underrun' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/mac_groups[2].nf2_mac_grp/gmii_col'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/mac_groups[2].nf2_mac_grp/gmii_crs'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx_underrun' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/mac_groups[1].nf2_mac_grp/gmii_col'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/mac_groups[1].nf2_mac_grp/gmii_crs'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_tx_underrun' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/mac_groups[0].nf2_mac_grp/gmii_col'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/mac_groups[0].nf2_mac_grp/gmii_crs'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_tx_underrun' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/nf2_dma/nf2_dma_sync/cpci_rxfifo_rd_data(32)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/nf2_dma/nf2_dma_sync/cpci_rxfifo_rd_data(33)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/nf2_dma/nf2_dma_sync/cpci_rxfifo_rd_data(34)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/r_almost_empty' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/r_almost_empty' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_assert<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_negate<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _full_thresh_assert<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/prog
+   _empty_thresh_negate<0>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 862
+
+Total memory usage is 377956 kilobytes
+
+Writing NGD file "nf2_top.ngd" ...
+
+Writing NGDBUILD log file "nf2_top.bld"...
