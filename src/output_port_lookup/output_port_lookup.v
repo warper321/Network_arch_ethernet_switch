@@ -19,12 +19,13 @@
       parameter CPU_QUEUE_NUM = 0)
 
    (// --- data path interface
-    output     [DATA_WIDTH-1:0]           out_data,0x000x00
+    output     [DATA_WIDTH-1:0]           out_data,
     output     [CTRL_WIDTH-1:0]           out_ctrl,
     output reg                            out_wr,
     input                                 out_rdy,
 
     input  [DATA_WIDTH-1:0]               in_data,
+    input  [DATA_WIDTH-1:0]		  switch_data,		
     input  [CTRL_WIDTH-1:0]               in_ctrl,
     input                                 in_wr,
     output                                in_rdy,
@@ -55,7 +56,7 @@
          while(2**log2<number) begin
             log2=log2+1;
          end
-      end0x00
+      end
    endfunction // log2
 
    //--------------------- Internal Parameter-------------------------
@@ -65,8 +66,15 @@
    //---------------------- Wires/Regs -------------------------------
    reg [DATA_WIDTH-1:0] in_data_modded;
    reg [15:0]           decoded_src;
+   reg [15:0] 		decoded_dst;
    reg                  state, state_nxt;
-
+   reg [47:0]		mac;
+   reg 			cam_we, port_we;
+   reg [3:0]		cam_addr, port_addr;
+   wire			cam_busy, cam_match, port_busy, port_match;
+   wire [3:0]		cam_match_addr,port_match_addr;
+   reg [15:0] 		port;
+   
    //----------------------- Modules ---------------------------------
    small_fifo #(.WIDTH(CTRL_WIDTH+DATA_WIDTH), .MAX_DEPTH_BITS(2))
       input_fifo
@@ -82,7 +90,14 @@
          .clk           (clk)
          );
 
-   //----------------------- Logic ---------------------------------
+ //--------------------------CAM--------------------------------
+   cam_v6_1 cam(clk, mac, cam_we, cam_addr, cam_busy, cam_match, cam_match_addr);
+
+   //-----------------------CAM for Port Num---------------------------------
+   cam_v6_1 mem(clk, port,port_we, port_addr, port_busy, port_match, port_match_addr);
+   
+   
+  //--------------- Logic ---------------------------------
 
    assign in_rdy = !in_fifo_nearly_full;
 
@@ -93,43 +108,44 @@
    always @(*) begin
       decoded_src = 0;
       decoded_src[in_data[`IOQ_SRC_PORT_POS+15:`IOQ_SRC_PORT_POS]] = 1'b1;
+      port_we = 0;
+      port = in_data[`IOQ_SRC_PORT_POS+15:`IOQ_SRC_PORT_POS];
+      if(!(port_match)) begin
+	port_addr = port;
+        switch_data[`SWITCH_OP_LUT_PORTS_MAC_HI_REG+31] = 1;
+      end
+	else
+	switch_data[`SWITCH_OP_LUT_PORTS_MAC_HI_REG+31] = 0;
+	
+            
    end
 
-   /* modify the IOQ module header */
+/*modify the IOQ module header */
    always @(*) begin
 
       in_data_modded   = in_data;
       state_nxt        = state;
 
       case(state)
+	
          IN_MODULE_HDRS: begin
             if(in_wr && in_ctrl==IO_QUEUE_STAGE_NUM) begin
                if(pkt_is_from_cpu) begin
-		  //0{000..1000}
-		  //0000000001010101
-                  in_data_modded[`IOQ_DST_PORT_POS+15:`IOQ_DST_PORT_POS] = 16'b0;
+                  in_data_modded[`IOQ_DST_PORT_POS+15:`IOQ_DST_PORT_POS] = ~decoded_src & 16'b0000000001010101;
                end
-               if (/*broadcastpacket*/1) begin
-                  in_data_modded[`IOQ_DST_PORT_POS+15:`IOQ_DST_PORT_POS] = decoded_src[15:0]^16'b1010101;
-               end
-            end
+                           end
             if(in_wr && in_ctrl==0) begin
                state_nxt = IN_PACKET;
             end
          end // case: IN_MODULE_HDRS
 
-         IN_ETHER_HDR:begin
-            if(loop == 0) begin
-               loop = 1;
-               state_nxt = IN_ETHER_HDR;
-            end
-           else begin
-               0x000x000x00
-
          IN_PACKET: begin
             if(in_wr && in_ctrl!=0) begin
                state_nxt = IN_MODULE_HDRS;
-            end
+	    end
+	    
+	else begin
+	       decoded_sa_mac = in_data[`
          end
       endcase // case(state)
    end // always @ (*)
@@ -144,7 +160,7 @@
    end
 
    /* handle outputs */
-   assign in_fifo_rd_en = out_rdy && !in_fifo_empty;
+   assign in_fifo_rd_en = out_rdy && !in_fifo_empty && decoded_dst;
    always @(posedge clk) begin
       out_wr <= reset ? 0 : in_fifo_rd_en;
    end
