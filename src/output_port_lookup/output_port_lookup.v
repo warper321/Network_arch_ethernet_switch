@@ -72,6 +72,8 @@
    reg 			cam_we, port_we;
    reg [3:0]		cam_addr, port_addr;
    wire			cam_busy, cam_match, port_busy, port_match;
+   reg [1:0]         count;
+   reg [63:0]		pack1, pack2;
    wire [3:0]		cam_match_addr,port_match_addr;
    reg [15:0] 		port;
    
@@ -129,16 +131,35 @@
       case(state)
 	
          IN_MODULE_HDRS: begin
+		  count = 2b'00';
             if(in_wr && in_ctrl==IO_QUEUE_STAGE_NUM) begin
                if(pkt_is_from_cpu) begin
                   in_data_modded[`IOQ_DST_PORT_POS+15:`IOQ_DST_PORT_POS] = ~decoded_src & 16'b0000000001010101;
                end
                            end
             if(in_wr && in_ctrl==0) begin
-               state_nxt = IN_PACKET;
+               state_nxt = IN_ETHERNET_HDRS;
             end
          end // case: IN_MODULE_HDRS
-
+         
+         IN_ETHERNET_HDRS: begin
+            if(in_wr) begin
+			if(count == 2b'00')
+				count = 2b'01';
+			else if(count == 2b'01')
+				begin
+					pack1 = in_data;
+					//register for source address = pack1[63:16]
+				count = 2b'10';
+				end
+			else if(count == 2b'10')
+				begin
+					pack2 = in_data;
+					//register for dest address = {pack1[15:0], pack2[63:32]}
+					count = 2b'00';
+					state_nxt = IN_PACKET;
+				end
+				
          IN_PACKET: begin
             if(in_wr && in_ctrl!=0) begin
                state_nxt = IN_MODULE_HDRS;
