@@ -6,7 +6,7 @@ use NF::PacketGen;
 use NF::PacketLib;
 use SimLib;
 
-require reg_defines_reference_nic;
+require reg_defines_ethernet_hub;
 
 $delay = '@4us';
 $batch = 0;
@@ -34,15 +34,17 @@ my $temp;
 # send and receive 3 pkts into each port, should appear after DMA
 $delay = '@17us';
 $length = 60;
-for($i=0; $i<4; $i++){
+for($i=2; $i<5; $i++){
   $temp = sprintf("%02x", $i);
   $DA = $temp . $DA_sub;
   $SA = $temp . $SA_sub;
   $in_port = 1;
+  $out_port = $i;
   $pkt = make_IP_pkt($length, $DA, $SA, 64, '192.168.0.1', '192.168.0.2');
   nf_packet_in($in_port, $length, $delay, $batch,  $pkt);
-  cpu_rxfifo_rd_pkt($in_port, $length, 0, $pkt);
-  PCI_create_and_send_pkt($in_port, $length);
+  nf_expected_packet($out_port, $length, $pkt);
+#  cpu_rxfifo_rd_pkt($in_port, $length, 0, $pkt);
+#  PCI_create_and_send_pkt($in_port, $length);
 }
 
 # check counter values
