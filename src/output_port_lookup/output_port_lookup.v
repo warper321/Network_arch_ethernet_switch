@@ -77,14 +77,20 @@
    reg              state, state_nxt;
    reg [47:0]		source_addr;
    reg [47:0]		dst_addr;
-   reg [47:0]		pack1;
-   reg [31:0]		pack2;
+   reg [63:0]		pack1;
+   reg [63:0]		pack2;
    reg [1:0]		count;
    reg [15:0]		src_port;
    reg [47:0]		cam_in;
-   reg 			cam_we, cam_busy, cam_match, ram_we, send_pkt;
-   reg [3:0]		cam_addr, cam_out, ram_addr, cam_index, ram_index;
-   reg [15:0]		ram_in, ram_out, ram_port;			
+   reg 			cam_we, ram_we, send_pkt;
+   reg [3:0]		cam_addr, ram_addr, cam_index, ram_index;
+   reg [15:0]		ram_in, ram_port;
+   wire                 cam_match;
+   wire [15:0] 	        ram_out;
+   wire                 cam_busy;
+   wire [3:0] 		cam_out;
+		
+   
 
  		
 

@@ -1,3 +1,7 @@
+                                                                     
+                                                                     
+                                                                     
+                                             
 #!/usr/local/bin/perl -w
 # make_pkts.pl
 #
@@ -6,7 +10,7 @@ use NF::PacketGen;
 use NF::PacketLib;
 use SimLib;
 
-require reg_defines_ethernet_hub;
+require reg_defines_ethernet_switch;
 
 $delay = '@4us';
 $batch = 0;
@@ -30,6 +34,9 @@ my $SA_sub3 = ':55:55:55:55:55';
 my $DA;
 my $SA;
 my $pkt;
+my $pkt1;
+my $pkt2;
+my $pkt3;
 my $in_port;
 my $out_port;
 my $i = 0;
@@ -81,4 +88,3 @@ if (nf_write_expected_files()) {
 
 nf_create_hardware_file('LITTLE_ENDIAN');
 nf_write_hardware_file('LITTLE_ENDIAN');
-
