@@ -4,44 +4,46 @@ Xilinx Mapping Report File for Design 'nf2_top'
 Design Information
 ------------------
 Command Line   : map -intstyle ise -timing -detail -ol high -cm speed
--register_duplication -ignore_keep_hierarchy -pr b -k 4 -c 100 -tx off
-nf2_top.ngd 
+-register_duplication -smartguide smartguide.ncd -ignore_keep_hierarchy -pr b -k
+4 -c 100 -tx off nf2_top.ngd 
 Target Device  : xc2vp50
 Target Package : ff1152
 Target Speed   : -7
 Mapper Version : virtex2p -- $Revision: 1.46.12.2 $
-Mapped Date    : Mon Feb  7 11:08:29 2011
+Mapped Date    : Thu Mar  3 15:42:26 2011
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings: 2078
+Number of warnings: 2164
 Logic Utilization:
-  Number of Slice Flip Flops:        12,301 out of  47,232   26%
-  Number of 4 input LUTs:            16,399 out of  47,232   34%
+  Total Number Slice Registers:      12,738 out of  47,232   26%
+    Number used as Flip Flops:       12,442
+    Number used as Latches:             296
+  Number of 4 input LUTs:            16,810 out of  47,232   35%
 Logic Distribution:
-  Number of occupied Slices:         12,638 out of  23,616   53%
-    Number of Slices containing only related logic:  12,638 out of  12,638 100%
-    Number of Slices containing unrelated logic:          0 out of  12,638   0%
+  Number of occupied Slices:         13,048 out of  23,616   55%
+    Number of Slices containing only related logic:  13,048 out of  13,048 100%
+    Number of Slices containing unrelated logic:          0 out of  13,048   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:      17,595 out of  47,232   37%
-    Number used as logic:            14,263
-    Number used as a route-thru:      1,196
+  Total Number of 4 input LUTs:      18,026 out of  47,232   38%
+    Number used as logic:            14,482
+    Number used as a route-thru:      1,216
     Number used for Dual Port RAMs:   1,678
       (Two LUTs used per Dual Port RAM)
     Number used for 32x1 RAMs:          256
       (Two LUTs used per 32x1 RAM)
     Number used as 16x1 RAMs:           160
-    Number used as Shift registers:      42
+    Number used as Shift registers:     234
   Number of bonded IOBs:                356 out of     692   51%
     IOB Flip Flops:                     651
-  Number of RAMB16s:                     89 out of     232   38%
+  Number of RAMB16s:                     90 out of     232   38%
   Number of BUFGMUXs:                     8 out of      16   50%
   Number of DCMs:                         6 out of       8   75%
 
-Peak Memory Usage:  1433 MB
-Total REAL time to MAP completion:  6 mins 45 secs 
-Total CPU time to MAP completion:   6 mins 45 secs 
+Peak Memory Usage:  1509 MB
+Total REAL time to MAP completion:  7 mins 2 secs 
+Total CPU time to MAP completion:   7 mins 1 secs 
 
 Table of Contents
 -----------------
@@ -2654,6 +2656,110 @@ WARNING:LIT:243 - Logical network
    nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/Mram_queue
    72/SPO has no load.
 WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/mac/match_addr<3> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/mac/match_addr<2> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/mac/match_addr<1> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/mac/match_addr<0> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<47> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<46> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<45> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<44> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<43> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<42> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<41> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<40> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<39> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<38> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<37> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<36> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<35> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<34> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<33> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<32> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<31> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<30> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<29> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<28> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<27> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<26> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<25> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<24> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<23> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<22> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<21> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<20> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<19> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<18> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<17> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<16> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<15> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<14> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<13> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<12> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<11> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<10> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<9> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<8> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<7> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<6> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<5> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<4> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<3> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<2> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<1> has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/output_port_lookup/port/douta<0> has no load.
+WARNING:LIT:243 - Logical network
    nf2_core/user_data_path/output_port_lookup/input_fifo/Mram_queue1/SPO has no
    load.
 WARNING:LIT:243 - Logical network
@@ -5012,6 +5118,50 @@ WARNING:Pack:504 - The I/O component rgmii_3_tx_ctl has conflicting SLEW
    property values.  The symbol rgmii_3_tx_ctl has property value FAST.  The
    symbol rgmii_3_io/drive_rgmii_tx_ctl has property value SLOW.  The system
    will use the property value attached to symbol rgmii_3_tx_ctl.
+WARNING:Pack:266 - The function generator reset1_7 failed to merge with F5
+   multiplexer
+   nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/rx_word_cnt_delta_or0000_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator reset1_7 failed to merge with F5
+   multiplexer
+   nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/rx_word_cnt_delta_or0000_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator reset1_7 failed to merge with F5
+   multiplexer
+   nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/rx_word_cnt_delta_or0000_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator reset1_8 failed to merge with F5
+   multiplexer
+   nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/rx_word_cnt_delta_or0000_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/state_nxt_not0001 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/send_pkt_not0001 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/cam_cmp_or0000 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/port_dstaddr_not0005 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/cam_en_not0001 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/cam_we_not0001 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:1060 - Dangling pins on
    block:<nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
    _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
@@ -5552,6 +5702,78 @@ WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
 WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
    block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
    _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB0> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB1> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB2> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB3> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB6> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB7> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB8> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB9> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB10> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB11> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB12> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB13> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB16> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB17> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB18> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
 WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
    block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
    _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
@@ -5637,6 +5859,9 @@ INFO:Map:110 - output buffer 'phy_mdc_OBUF' driving design level port 'phy_mdc'
    is being pushed into module 'nf2_core/nf2_mdio' to enable I/O register usage.
    The buffer has been renamed as 'nf2_core/nf2_mdio/phy_mdc_OBUF'.
 INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:980 - The following NGM file is used during SmartGuide:
+   "nf2_top.ngm". The NGM file contains information on how the guide file was
+   originally mapped. It is required for the best SmartGuide results.
 INFO:MapLib:533 - The following XORCY(s) is/are demoted to LUTs because there is
    no MUXCY associated with them. Therefore, we cannot recognize the standard
    carry chain structure (5 of 262 are listed):
@@ -5665,20 +5890,16 @@ INFO:MapLib:533 - The following XORCY(s) is/are demoted to LUTs because there is
    bytes_removed_reg/Madd_curr_plus_new_b_xor(12)" (output
    signal=nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_ove
    rhead_bytes_removed_reg/curr_plus_new_b(12))
-INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
-   0.000 to 85.000 Celsius)
-INFO:Pack:1720 - Initializing voltage to 1.400 Volts. (default - Range: 1.400 to
-   1.600 Volts)
 INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more
    information see the TSI report.
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 417 block(s) removed
- 297 block(s) optimized away
- 400 signal(s) removed
-1190 Block(s) redundant
+ 443 block(s) removed
+ 302 block(s) optimized away
+ 470 signal(s) removed
+1185 Block(s) redundant
 
 Section 5 - Removed Logic
 -------------------------
@@ -7065,6 +7286,189 @@ sourceless and has been removed.
 The signal
 "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/N0" is
 sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/mac/match_addr<3>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/mac/match_addr<2>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/mac/match_addr<1>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/mac/match_addr<0>" is
+sourceless and has been removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<3>" is sourceless and has been removed.
+ Sourceless block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_int_3
+" (FF) removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<2>" is sourceless and has been removed.
+ Sourceless block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_int_2
+" (FF) removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<1>" is sourceless and has been removed.
+ Sourceless block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_int_1
+" (FF) removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>" is sourceless and has been removed.
+ Sourceless block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_int_0
+" (FF) removed.
+The signal "nf2_core/user_data_path/output_port_lookup/mac/BU2/N4" is sourceless
+and has been removed.
+ Sourceless block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<2>" (ROM) removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/mux0010_or0003" is
+sourceless and has been removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/matches_bin<3>" is
+sourceless and has been removed.
+ Sourceless block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<1>62" (ROM) removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<1>8" is sourceless and has been removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<1>12" is sourceless and has been removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<1>43" is sourceless and has been removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>26" is sourceless and has been removed.
+ Sourceless block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>38_SW0" (ROM) removed.
+  The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>38_SW0/O" is sourceless and has been removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>62" is sourceless and has been removed.
+ Sourceless block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>90" (ROM) removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>38" is sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/_or00009"
+is sourceless and has been removed.
+ Sourceless block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<3>1" (ROM) removed.
+ Sourceless block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>38" (ROM) removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>59/O" is sourceless and has been removed.
+The signal
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<1>43_SW0/O" is sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<47>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<46>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<45>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<44>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<43>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<42>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<41>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<40>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<39>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<38>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<37>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<36>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<35>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<34>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<33>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<32>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<31>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<30>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<29>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<28>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<27>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<26>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<25>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<24>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<23>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<22>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<21>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<20>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<19>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<18>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<17>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<16>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<15>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<14>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<13>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<12>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<11>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<10>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<9>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<8>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<7>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<6>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<5>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<4>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<3>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<2>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<1>" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/output_port_lookup/port/douta<0>" is
+sourceless and has been removed.
 The signal "nf2_core/user_data_path/output_port_lookup/input_fifo/N0" is
 sourceless and has been removed.
 The signal
@@ -8032,6 +8436,9 @@ _mux000088" (ROM) removed.
 The signal
 "nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_almost_full_i
 _mux000026" is sourceless and has been removed.
+The signal
+"nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_almost_full_i
+_mux000051" is sourceless and has been removed.
 The signal "nf2_core/cpci_bus/pci2net_fifo/BU2/N29" is sourceless and has been
 removed.
  Sourceless block
@@ -8040,6 +8447,9 @@ _mux000051" (ROM) removed.
   The signal
 "nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_almost_full_i
 _mux000051/O" is sourceless and has been removed.
+   Sourceless block
+"nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_almost_full_i
+_mux000051/LUT4_L_BUF" (BUF) removed.
 The signal "nf2_core/cpci_bus/net2pci_fifo/full" is sourceless and has been
 removed.
 
@@ -8400,6 +8810,46 @@ Unused block "serial_TXN_0" (PAD) removed.
 Unused block "serial_TXN_1" (PAD) removed.
 Unused block "serial_TXP_0" (PAD) removed.
 Unused block "serial_TXP_1" (PAD) removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/_or000010" (ROM)
+removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/_or00009" (ROM)
+removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>26" (ROM) removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>59" (ROM) removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<0>62" (ROM) removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<1>12" (ROM) removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<1>43" (ROM) removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<1>43_SW0" (ROM) removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<1>8" (ROM) removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_re
+g<2>_SW0" (ROM) removed.
+Unused block
+"nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/mux0010_or00031"
+(ROM) removed.
+Unused block "nf2_core/user_data_path/output_port_lookup/mac/GND" (ZERO)
+removed.
+Unused block "nf2_core/user_data_path/output_port_lookup/mac/VCC" (ONE) removed.
+Unused block "nf2_core/user_data_path/output_port_lookup/port/GND" (ZERO)
+removed.
+Unused block "nf2_core/user_data_path/output_port_lookup/port/VCC" (ONE)
+removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
@@ -8902,6 +9352,11 @@ VCC
 .gmac_tx_fifo/BU2/XST_VCC
 GND 		nf2_core/user_data_path/output_queues/store_pkt/XST_GND
 VCC 		nf2_core/user_data_path/output_queues/store_pkt/XST_VCC
+GND 		nf2_core/user_data_path/output_port_lookup/XST_GND
+VCC 		nf2_core/user_data_path/output_port_lookup/XST_VCC
+GND 		nf2_core/user_data_path/output_port_lookup/mac/BU2/XST_GND
+GND 		nf2_core/user_data_path/output_port_lookup/port/BU2/XST_GND
+VCC 		nf2_core/user_data_path/output_port_lookup/port/BU2/XST_VCC
 MUXCY
 		nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_by
 tes_removed_reg/Madd_curr_plus_new_a_cy(0)
@@ -8924,8 +9379,16 @@ Madd_curr_plus_new_a_cy(0)
 Redundant Block(s):
 TYPE 		BLOCK
 LOCALBUF
-		nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_almost_full_
-i_mux000051/LUT4_L_BUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/_or00009/LUT4_D_BUF
+LOCALBUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_r
+eg<0>59/LUT4_L_BUF
+LOCALBUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_r
+eg<1>43_SW0/LUT3_L_BUF
+LOCALBUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_addr_bin_bf_r
+eg<0>38_SW0/LUT4_L_BUF
 LOCALBUF
 		nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_fifos[0]
 .gmac_tx_fifo/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i_or0000_SW0/LUT2_L_BU
@@ -9066,6 +9529,39 @@ r0000118/LUT4_L_BUF
 LOCALBUF
 		nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i_or000
 070_SW0/LUT3_L_BUF
+INV 		nf2_core/user_data_path/output_port_lookup/in_rdy1_INV_0
+LOCALBUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/WR_ADDR_INT<1>1/LUT
+3_D_BUF
+LOCALBUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/WR_ADDR_INT<0>1/LUT
+3_D_BUF
+LOCALBUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0]
+.glast.blkb/gedec.gdecm/DEC_10_mux000111/LUT4_D_BUF
+LOCALBUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0]
+.glast.blkb/gedec.gdecm/DEC_0_mux000111/LUT4_D_BUF
+LOCALBUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/WREN1/LUT2_D_BUF
+LOCALBUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0]
+.glast.blkb/gedec.gdecm/DEC_4_mux000111/LUT4_D_BUF
+LOCALBUF
+		nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_bf_reg21/LUT4
+_D_BUF
+LOCALBUF
+		nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU
+2/U0/grf.rf/gl0.wr/gwas.gpf.wrpf/prog_full_i_mux000327_SW0/LUT3_L_BUF
+LOCALBUF
+		nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU
+2/U0/grf.rf/gl0.wr/gwas.gpf.wrpf/prog_full_i_mux000327_SW0/LUT3_L_BUF
+LOCALBUF
+		nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU
+2/U0/grf.rf/gl0.wr/gwas.gpf.wrpf/prog_full_i_mux000327_SW0/LUT3_L_BUF
+LOCALBUF
+		nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU
+2/U0/grf.rf/gl0.wr/gwas.gpf.wrpf/prog_full_i_mux000327_SW0/LUT3_L_BUF
 LUT1 		nf2_core/user_data_path/input_arbiter/in_arb_regs/Mcount_eop_cnt_cy(1)_rt
 LUT1 		nf2_core/user_data_path/input_arbiter/in_arb_regs/Mcount_eop_cnt_cy(2)_rt
 LUT1 		nf2_core/user_data_path/input_arbiter/in_arb_regs/Mcount_eop_cnt_cy(3)_rt
@@ -9208,7 +9704,8 @@ NV_0
 INV
 		nf2_core/user_data_path/output_port_lookup/input_fifo/Mcount_depth_xor(0)11_IN
 V_0
-INV 		nf2_core/user_data_path/output_port_lookup/in_rdy1_INV_0
+INV
+		nf2_core/user_data_path/output_port_lookup/Madd_count_add0000_xor(0)11_INV_0
 LUT1
 		nf2_core/user_data_path/output_queues/store_pkt/Madd_wr_0_addr_plus1_addsub000
 0_cy(1)_rt
@@ -9804,8 +10301,6 @@ INV
 		nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_
 reg/wr_update_a_inv1_INV_0
 INV
-		nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_queue_en1_INV_0
-INV
 		nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/rx_queue_en1_INV_0
 LUT1
 		nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU
@@ -9941,8 +10436,6 @@ INV 		nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_rx_queue/reset_inv1_INV_0
 INV
 		nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_q_dma_wr_inv1_INV_
 0
-INV
-		nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_queue_en1_INV_0
 INV
 		nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/rx_queue_en1_INV_0
 LUT1
@@ -10080,8 +10573,6 @@ INV
 		nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_q_dma_wr_inv1_INV_
 0
 INV
-		nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_queue_en1_INV_0
-INV
 		nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/rx_queue_en1_INV_0
 LUT1
 		nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU
@@ -10217,8 +10708,6 @@ INV 		nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/reset_inv1_INV_0
 INV
 		nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_q_dma_wr_inv1_INV_
 0
-INV
-		nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_queue_en1_INV_0
 INV
 		nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/rx_queue_en1_INV_0
 LUT1
@@ -10356,10 +10845,6 @@ INV
 		nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_q_dma_rd_inv1_INV_
 0
 INV 		nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/tx_queue_en1_INV_0
-INV 		nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/tx_mac_en1_INV_0
-INV 		nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/rx_mac_en1_INV_0
-INV 		nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/enable_jumbo_tx1_INV_0
-INV 		nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/enable_jumbo_rx1_INV_0
 INV 		nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/rx_queue_en1_INV_0
 LUT1
 		nf2_core/mac_groups[3].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf
@@ -10835,10 +11320,6 @@ LUT1
 		nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_rx/Madd_rx_counter_next_add
 sub0000_xor(13)_rt
 INV 		nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/tx_queue_en1_INV_0
-INV 		nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/tx_mac_en1_INV_0
-INV 		nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/rx_mac_en1_INV_0
-INV 		nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/enable_jumbo_tx1_INV_0
-INV 		nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/enable_jumbo_rx1_INV_0
 INV 		nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/rx_queue_en1_INV_0
 LUT1
 		nf2_core/mac_groups[2].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf
@@ -11314,10 +11795,6 @@ LUT1
 		nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_rx/Madd_rx_counter_next_add
 sub0000_xor(13)_rt
 INV 		nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/tx_queue_en1_INV_0
-INV 		nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/tx_mac_en1_INV_0
-INV 		nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/rx_mac_en1_INV_0
-INV 		nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/enable_jumbo_tx1_INV_0
-INV 		nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/enable_jumbo_rx1_INV_0
 INV 		nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/rx_queue_en1_INV_0
 LUT1
 		nf2_core/mac_groups[1].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf
@@ -11793,10 +12270,6 @@ LUT1
 		nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/Madd_rx_counter_next_add
 sub0000_xor(13)_rt
 INV 		nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/tx_queue_en1_INV_0
-INV 		nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/tx_mac_en1_INV_0
-INV 		nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/rx_mac_en1_INV_0
-INV 		nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/enable_jumbo_tx1_INV_0
-INV 		nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/enable_jumbo_rx1_INV_0
 INV 		nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/rx_queue_en1_INV_0
 LUT1
 		nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen
@@ -13068,7 +13541,27 @@ Section 7 - RPMs
 
 Section 8 - Guide Report
 ------------------------
-Guide not run on this design.
+
+Thu Mar 03 15:49:06 2011
+
+  Estimated SmartGuide Results
+  ----------------------------
+  This section describes the guide results after placement. Re-implemented 
+  components are components that were guided, but moved in order to satisfy
+  timing requirements.
+
+    Estimated Percentage of guided Components                 |  83.2%
+    Estimated Percentage of re-implemented Components         |  11.2%
+    Estimated Percentage of new/changed Components            |   5.6%
+    Estimated Percentage of fully guided Nets                 |  73.3%
+    Estimated Percentage of partially guided or unrouted Nets |  26.7%
+
+  A detailed SmartGuide report (.GRF) can be generated during PAR by
+  specifying the [-smartguide <guidefile[.ncd]>] switch on the PAR
+  command line. The GRF file contains all components and nets that were
+  not guided. A final summary report is always generated and is available
+  in the PAR report file regardless of the PAR -smartguide switch.
+
 
 Section 9 - Area Group and Partition Summary
 --------------------------------------------
@@ -17968,6 +18461,91 @@ PORTA_ATTR:4096X4
 WRITEMODEA:WRITE_FIRST
 INIT_A = 0
 SRVAL_A = 0
+PORTB_ATTR:512X36
+WRITEMODEB:WRITE_FIRST
+INIT_B = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16
+"nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generator/valid.
+cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram":
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:512X36
+WRITEMODEA:WRITE_FIRST
+INIT_A = 000000000
+SRVAL_A = 000000000
 PORTB_ATTR:512X36
 WRITEMODEB:WRITE_FIRST
 INIT_B = 000000000

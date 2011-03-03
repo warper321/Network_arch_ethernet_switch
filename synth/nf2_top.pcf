@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map K.39 on Mon Feb 07 11:15:06 2011
+// Written by: Map K.39 on Thu Mar 03 15:49:19 2011
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -6293,11 +6293,76 @@ TIMEGRP cpci_clk = BEL "nf2_core/user_data_path/udp_reg_master/core_reg_ack"
         "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/depth_1"
         BEL
         "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/depth_2"
-        BEL "nf2_core/user_data_path/output_port_lookup/out_wr" BEL
-        "nf2_core/user_data_path/output_port_lookup/state" BEL
+        BEL "nf2_core/user_data_path/output_port_lookup/out_data_0" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_1" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_2" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_3" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_4" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_5" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_6" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_7" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_8" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_9" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_10" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_11" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_12" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_13" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_14" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_15" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_16" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_17" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_18" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_19" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_20" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_21" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_22" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_23" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_24" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_25" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_26" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_27" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_28" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_29" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_30" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_31" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_32" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_33" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_34" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_35" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_36" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_37" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_38" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_39" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_40" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_41" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_42" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_43" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_44" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_45" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_46" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_47" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_48" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_49" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_50" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_51" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_52" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_53" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_54" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_55" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_56" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_57" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_58" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_59" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_60" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_61" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_62" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_63" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_wr" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_req_out" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_ack_out" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_rd_wr_L_out" BEL
+        "nf2_core/user_data_path/output_port_lookup/reg_src_out_0" BEL
+        "nf2_core/user_data_path/output_port_lookup/reg_src_out_1" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_addr_out_0" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_addr_out_1" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_addr_out_2" BEL
@@ -6353,9 +6418,529 @@ TIMEGRP cpci_clk = BEL "nf2_core/user_data_path/udp_reg_master/core_reg_ack"
         "nf2_core/user_data_path/output_port_lookup/reg_data_out_29" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_data_out_30" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_data_out_31" BEL
-        "nf2_core/user_data_path/output_port_lookup/reg_src_out_0" BEL
-        "nf2_core/user_data_path/output_port_lookup/reg_src_out_1" BEL
-        "nf2_core/user_data_path/output_port_lookup/input_fifo/dout_0" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_0" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_1" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_2" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_3" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_4" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_5" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_6" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_7" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_8" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_0" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_1" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_2" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_3" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_4" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_5" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_6" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_7" BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_47"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_46"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_45"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_44"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_43"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_42"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_41"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_40"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_39"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_38"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_37"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_36"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_35"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_34"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_33"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_32"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_31"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_30"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_29"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_28"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_27"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_26"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_25"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_24"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_23"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_22"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_21"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_20"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_19"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_18"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_17"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_16"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_15"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_14"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_13"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_12"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_11"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_10"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_9"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_8"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_7"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_6"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_5"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_4"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_3"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_2"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_1"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_0"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/wr_addr_q_3"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/wr_addr_q_2"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/wr_addr_q_1"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/wr_addr_q_0"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_int"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/wr_count_integer_srl_3"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/wr_count_integer_srl_2"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/wr_count_integer_srl_1"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/wr_count_integer_srl_0"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/busy_i"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/end_next_write"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/int_reg_en_i"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/int_reg_en_i_1"
+        BEL "nf2_core/user_data_path/output_port_lookup/input_fifo/dout_0" BEL
         "nf2_core/user_data_path/output_port_lookup/input_fifo/dout_1" BEL
         "nf2_core/user_data_path/output_port_lookup/input_fifo/dout_2" BEL
         "nf2_core/user_data_path/output_port_lookup/input_fifo/dout_3" BEL
@@ -22285,6 +22870,16 @@ TIMEGRP cpci_clk = BEL "nf2_core/user_data_path/udp_reg_master/core_reg_ack"
         "nf2_core/sram64.sram_arbiter/cnet_sram_sm/Mshreg_is_read_2/SRL16E"
         BEL "nf2_core/sram64.sram_arbiter/cnet_sram_sm/is_read_2";
 PIN
+        nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.A_pins<15>
+        = BEL
+        "nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.A"
+        PINNAME CLKA;
+PIN
+        nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B_pins<15>
+        = BEL
+        "nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B"
+        PINNAME CLKB;
+PIN
         nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_fifos[0].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A_pins<15>
         = BEL
         "nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_fifos[0].gmac_tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A"
@@ -24850,11 +25445,76 @@ TIMEGRP core_clk_int = BEL
         "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/depth_1"
         BEL
         "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/depth_2"
-        BEL "nf2_core/user_data_path/output_port_lookup/out_wr" BEL
-        "nf2_core/user_data_path/output_port_lookup/state" BEL
+        BEL "nf2_core/user_data_path/output_port_lookup/out_data_0" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_1" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_2" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_3" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_4" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_5" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_6" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_7" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_8" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_9" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_10" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_11" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_12" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_13" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_14" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_15" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_16" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_17" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_18" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_19" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_20" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_21" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_22" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_23" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_24" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_25" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_26" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_27" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_28" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_29" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_30" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_31" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_32" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_33" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_34" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_35" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_36" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_37" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_38" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_39" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_40" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_41" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_42" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_43" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_44" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_45" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_46" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_47" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_48" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_49" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_50" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_51" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_52" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_53" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_54" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_55" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_56" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_57" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_58" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_59" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_60" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_61" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_62" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_data_63" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_wr" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_req_out" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_ack_out" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_rd_wr_L_out" BEL
+        "nf2_core/user_data_path/output_port_lookup/reg_src_out_0" BEL
+        "nf2_core/user_data_path/output_port_lookup/reg_src_out_1" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_addr_out_0" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_addr_out_1" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_addr_out_2" BEL
@@ -24910,9 +25570,533 @@ TIMEGRP core_clk_int = BEL
         "nf2_core/user_data_path/output_port_lookup/reg_data_out_29" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_data_out_30" BEL
         "nf2_core/user_data_path/output_port_lookup/reg_data_out_31" BEL
-        "nf2_core/user_data_path/output_port_lookup/reg_src_out_0" BEL
-        "nf2_core/user_data_path/output_port_lookup/reg_src_out_1" BEL
-        "nf2_core/user_data_path/output_port_lookup/input_fifo/dout_0" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_0" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_1" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_2" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_3" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_4" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_5" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_6" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_7" BEL
+        "nf2_core/user_data_path/output_port_lookup/state_8" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_0" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_1" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_2" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_3" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_4" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_5" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_6" BEL
+        "nf2_core/user_data_path/output_port_lookup/out_ctrl_7" BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_47"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_46"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_45"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_44"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_43"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_42"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_41"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_40"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_39"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_38"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_37"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_36"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_35"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_34"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_33"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_32"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_31"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_30"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_29"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_28"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_27"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_26"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_25"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_24"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_23"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_22"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_21"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_20"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_19"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_18"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_17"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_16"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_15"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_14"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_13"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_12"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_11"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_10"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_9"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_8"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_7"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_6"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_5"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_4"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_3"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_2"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_1"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/din_q_0"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/wr_addr_q_3"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/wr_addr_q_2"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/wr_addr_q_1"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/ilog/wr_addr_q_0"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mlog/match_int"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/wr_count_integer_srl_3"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/wr_count_integer_srl_2"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/wr_count_integer_srl_1"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/wr_count_integer_srl_0"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/busy_i"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/end_next_write"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/int_reg_en_i"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[0].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[1].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[2].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[3].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[4].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[5].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[6].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[7].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[8].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[9].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[10].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[11].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[12].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[13].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[14].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[0].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[1].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[2].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[3].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[4].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[5].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[6].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[7].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[8].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[9].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[10].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/mem/gsrl.srlmem/gblks[0].glast.blkb/loopw[15].sword/gsrl[11].gini0.psrl"
+        BEL
+        "nf2_core/user_data_path/output_port_lookup/mac/BU2/U0/clog/int_reg_en_i_1"
+        PIN
+        "nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.A_pins<15>"
+        PIN
+        "nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B_pins<15>"
+        BEL "nf2_core/user_data_path/output_port_lookup/input_fifo/dout_0" BEL
         "nf2_core/user_data_path/output_port_lookup/input_fifo/dout_1" BEL
         "nf2_core/user_data_path/output_port_lookup/input_fifo/dout_2" BEL
         "nf2_core/user_data_path/output_port_lookup/input_fifo/dout_3" BEL

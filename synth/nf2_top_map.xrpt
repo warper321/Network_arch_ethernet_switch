@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Mon Feb  7 11:15:14 2011">
+  <application stringID="Map" timeStamp="Thu Mar  3 15:49:28 2011">
     <task stringID="MAP_PACK_REPORT">
       <section stringID="MAP_DESIGN_INFORMATION">
         <item stringID="MAP_PART" value="2vp50ff1152-7"/>
@@ -17,30 +17,30 @@
       <section stringID="MAP_DESIGN_SUMMARY">
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="2078"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="1467684"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="6 mins 45 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="6 mins 45 secs "/>
+        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="2164"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="1545664"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="7 mins 2 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="7 mins 1 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING"/>
       <section stringID="MAP_LOGIC_UTILIZATION">
-        <item dataType="int" stringID="MAP_NUM_SLICE_FF" value="12301"/>
-        <item dataType="int" stringID="MAP_NUM_SLICE_LATCH" value="0"/>
+        <item dataType="int" stringID="MAP_NUM_SLICE_FF" value="12442"/>
+        <item dataType="int" stringID="MAP_NUM_SLICE_LATCH" value="296"/>
         <item dataType="int" stringID="MAP_NUM_SLICE" value="23616"/>
         <item dataType="int" stringID="MAP_FLOPS_PER_SLICE" value="2"/>
-        <item dataType="int" stringID="MAP_NUM_4_INPUT_LUT" value="16399"/>
-        <item dataType="int" stringID="MAP_NUM_LUT_RT" value="16399"/>
+        <item dataType="int" stringID="MAP_NUM_4_INPUT_LUT" value="16810"/>
+        <item dataType="int" stringID="MAP_NUM_LUT_RT" value="16810"/>
       </section>
       <section stringID="MAP_LOGIC_DISTRIBUTION">
-        <item dataType="int" stringID="MAP_AGG_SLICE" value="12638"/>
+        <item dataType="int" stringID="MAP_AGG_SLICE" value="13048"/>
         <item dataType="int" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_4_INPUT_LUT" value="17595"/>
-        <item dataType="int" stringID="MAP_NUM_LUT_RT" value="1196"/>
+        <item dataType="int" stringID="MAP_NUM_4_INPUT_LUT" value="18026"/>
+        <item dataType="int" stringID="MAP_NUM_LUT_RT" value="1216"/>
         <item dataType="int" stringID="MAP_NUM_DP_RAM" value="1678"/>
         <item dataType="int" stringID="MAP_NUM_RAM32" value="256"/>
         <item dataType="int" stringID="MAP_NUM_RAM16" value="160"/>
         <item dataType="int" stringID="MAP_NUM_ROM16" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_SHIFT" value="42"/>
+        <item dataType="int" stringID="MAP_NUM_SHIFT" value="234"/>
       </section>
       <section stringID="MAP_IOB_REPORTING">
         <item AVAILABLE="692" dataType="int" stringID="MAP_AGG_BONDED_IO" value="356"/>
@@ -50,7 +50,7 @@
       </section>
       <section stringID="MAP_HARD_IP_REPORTING">
         <item AVAILABLE="1" dataType="int" stringID="MAP_NUM_JTAGPPC" value="0"/>
-        <item AVAILABLE="232" dataType="int" stringID="MAP_NUM_RAMB16" value="89"/>
+        <item AVAILABLE="232" dataType="int" stringID="MAP_NUM_RAMB16" value="90"/>
         <item AVAILABLE="1" dataType="int" stringID="MAP_NUM_ICAP" value="0"/>
         <item AVAILABLE="1" dataType="int" stringID="MAP_NUM_STARTUP" value="0"/>
         <item AVAILABLE="1" dataType="int" stringID="MAP_NUM_BSCAN" value="0"/>
@@ -3456,7 +3456,7 @@
       </section>
       <section stringID="MAP_RPM_MACROS">
         <section stringID="MAP_SHAPE_SECTION">
-          <item dataType="int" stringID="MAP_NUM_SHAPE" value="1281"/>
+          <item dataType="int" stringID="MAP_NUM_SHAPE" value="1297"/>
         </section>
       </section>
       <section stringID="MAP_GUIDE_REPORT"/>

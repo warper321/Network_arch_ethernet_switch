@@ -97,8 +97,14 @@ Compiling verilog file "/exports/homes/mbruckel/netfpga/lib/verilog/core/common/
 Compiling verilog file "/exports/homes/mbruckel/netfpga/projects/cpci/include/registers.v" in library work
 Compiling verilog file "../include/registers.v" in library work
 Compiling verilog file "../src/output_port_lookup/output_port_lookup.v" in library work
-Compiling verilog file "/exports/homes/mbruckel/netfpga/lib/verilog/core/io_queues/cpu_dma_queue/src/cpu_dma_queue_no_regs.v" in library work
+Compiling verilog file "../src/src_coregen/cam_mac.v" in library work
 Module <output_port_lookup> compiled
+Compiling verilog file "../src/src_coregen/ram_mem.v" in library work
+Module <cam_mac> compiled
+Compiling verilog file "../src/src_coregen/ram_port.v" in library work
+Module <ram_mem> compiled
+Compiling verilog file "/exports/homes/mbruckel/netfpga/lib/verilog/core/io_queues/cpu_dma_queue/src/cpu_dma_queue_no_regs.v" in library work
+Module <ram_port> compiled
 Compiling verilog file "/exports/homes/mbruckel/netfpga/lib/verilog/core/io_queues/cpu_dma_queue/src/cpu_dma_queue_regs.v" in library work
 Module <cpu_dma_queue_no_regs> compiled
 Compiling verilog file "/exports/homes/mbruckel/netfpga/lib/verilog/core/io_queues/cpu_dma_queue/src/cpu_dma_queue.v" in library work
@@ -356,7 +362,7 @@ Analyzing hierarchy for module <device_id_reg> in library <work> with parameters
 	PROJ_DESC = "Ethernet Hub"
 	PROJ_DESC_BYTE_LEN = "00000000000000000000000001100100"
 	PROJ_DESC_WORD_LEN = "00000000000000000000000000011001"
-	PROJ_DIR = "ethernet_hub"
+	PROJ_DIR = "Network_arch_ethernet_switch"
 	PROJ_DIR_BYTE_LEN = "00000000000000000000000001000000"
 	PROJ_DIR_WORD_LEN = "00000000000000000000000000010000"
 	PROJ_NAME = "Ethernet Hub"
@@ -475,16 +481,23 @@ Analyzing hierarchy for module <input_arbiter> in library <work> with parameters
 	WR_PKT = "00000000000000000000000000000001"
 
 Analyzing hierarchy for module <output_port_lookup> in library <work> with parameters.
+	CHECK_DST_CAM = "0100"
+	CHECK_RAM = "0101"
+	CHECK_SRC_CAM = "0011"
 	CPU_QUEUE_NUM = "00000000000000000000000000000000"
 	CTRL_WIDTH = "00000000000000000000000000001000"
 	DATA_WIDTH = "00000000000000000000000001000000"
+	DST_ADDR = "0001"
 	INPUT_ARBITER_STAGE_NUM = "00000000000000000000000000000010"
-	IN_MODULE_HDRS = "00000000000000000000000000000000"
-	IN_PACKET = "00000000000000000000000000000001"
+	IN_MODULE_HDRS = "0000"
+	IN_PACKET = "1000"
 	IO_QUEUE_STAGE_NUM = "11111111"
 	NUM_IQ_BITS = "00000000000000000000000000000011"
 	NUM_OUTPUT_QUEUES = "00000000000000000000000000001000"
+	SRC_ADDR = "0010"
 	STAGE_NUM = "00000000000000000000000000000100"
+	STORE_CAM = "0110"
+	STORE_RAM = "0111"
 	UDP_REG_SRC_WIDTH = "00000000000000000000000000000010"
 
 Analyzing hierarchy for module <output_queues> in library <work> with parameters.
@@ -1573,17 +1586,26 @@ Analyzing module <small_fifo.1> in library <work>.
 Module <small_fifo.1> is correct for synthesis.
  
 Analyzing module <output_port_lookup> in library <work>.
+	CHECK_DST_CAM = 4'b0100
+	CHECK_RAM = 4'b0101
+	CHECK_SRC_CAM = 4'b0011
 	CPU_QUEUE_NUM = 32'sb00000000000000000000000000000000
 	CTRL_WIDTH = 32'sb00000000000000000000000000001000
 	DATA_WIDTH = 32'sb00000000000000000000000001000000
+	DST_ADDR = 4'b0001
 	INPUT_ARBITER_STAGE_NUM = 32'sb00000000000000000000000000000010
-	IN_MODULE_HDRS = 32'sb00000000000000000000000000000000
-	IN_PACKET = 32'sb00000000000000000000000000000001
+	IN_MODULE_HDRS = 4'b0000
+	IN_PACKET = 4'b1000
 	IO_QUEUE_STAGE_NUM = 8'b11111111
 	NUM_IQ_BITS = 32'sb00000000000000000000000000000011
 	NUM_OUTPUT_QUEUES = 32'sb00000000000000000000000000001000
+	SRC_ADDR = 4'b0010
 	STAGE_NUM = 32'sb00000000000000000000000000000100
+	STORE_CAM = 4'b0110
+	STORE_RAM = 4'b0111
 	UDP_REG_SRC_WIDTH = 32'sb00000000000000000000000000000010
+WARNING:Xst:2211 - "../src/src_coregen/cam_mac.v" line 118: Instantiating black box module <cam_mac>.
+WARNING:Xst:2211 - "../src/src_coregen/ram_mem.v" line 129: Instantiating black box module <ram_mem>.
 Module <output_port_lookup> is correct for synthesis.
  
 Analyzing module <output_queues> in library <work>.
@@ -1924,7 +1946,7 @@ Analyzing module <device_id_reg> in library <work>.
 	PROJ_DESC = "Ethernet Hub"
 	PROJ_DESC_BYTE_LEN = 32'sb00000000000000000000000001100100
 	PROJ_DESC_WORD_LEN = 32'sb00000000000000000000000000011001
-	PROJ_DIR = "ethernet_hub"
+	PROJ_DIR = "Network_arch_ethernet_switch"
 	PROJ_DIR_BYTE_LEN = 32'sb00000000000000000000000001000000
 	PROJ_DIR_WORD_LEN = 32'sb00000000000000000000000000010000
 	PROJ_NAME = "Ethernet Hub"
@@ -2536,6 +2558,9 @@ Module <unused_reg.2> is correct for synthesis.
 =========================================================================
 
 Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <ram_we> in unit <output_port_lookup> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <hits> in unit <output_port_lookup> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <misses> in unit <output_port_lookup> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <num_bytes_written> in unit <cpu_dma_rx_queue_1> has a constant value of 000000000000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <num_bytes_written> in unit <cpu_dma_rx_queue_2> has a constant value of 000000000000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <num_bytes_written> in unit <cpu_dma_rx_queue_3> has a constant value of 000000000000 during circuit operation. The register is replaced by logic.
@@ -3662,16 +3687,60 @@ Unit <input_arbiter> synthesized.
 
 Synthesizing Unit <output_port_lookup>.
     Related source file is "../src/output_port_lookup/output_port_lookup.v".
+WARNING:Xst:1780 - Signal <src_port> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <read_cam_src> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <read_cam_dst2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <read_cam_dst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ram_out<47:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ram_index> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pack1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <new_pkt> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <misses> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <hits> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dst_cam_index> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <decoded_src> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <count_cam> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cam_index> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 16-bit latch for signal <port_srcaddr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 48-bit latch for signal <dst_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <src_addr_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 48-bit latch for signal <src_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <cam_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 48-bit latch for signal <cam_in>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <ram_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 56-bit latch for signal <ram_in>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <count>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Using one-hot encoding for signal <state>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state> of Case statement line 150 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+WARNING:Xst:737 - Found 1-bit latch for signal <send_pkt>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 9-bit latch for signal <state_nxt>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <cam_en>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 48-bit latch for signal <cam_cmp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <cam_we>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <port_dstaddr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
     Found 32-bit register for signal <reg_data_out>.
     Found 1-bit register for signal <reg_ack_out>.
     Found 1-bit register for signal <reg_rd_wr_L_out>.
     Found 1-bit register for signal <reg_req_out>.
     Found 23-bit register for signal <reg_addr_out>.
     Found 2-bit register for signal <reg_src_out>.
+    Found 8-bit register for signal <out_ctrl>.
     Found 1-bit register for signal <out_wr>.
-    Found 1-bit register for signal <state>.
+    Found 64-bit register for signal <out_data>.
+    Found 4-bit adder for signal <count$add0000> created at line 240.
+    Found 9-bit register for signal <state>.
     Summary:
-	inferred  62 D-type flip-flop(s).
+	inferred 142 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
 Unit <output_port_lookup> synthesized.
 
 
@@ -4758,7 +4827,7 @@ Macro Statistics
 # ROMs                                                 : 5
  4x14-bit ROM                                          : 4
  64x32-bit ROM                                         : 1
-# Adders/Subtractors                                   : 130
+# Adders/Subtractors                                   : 131
  10-bit adder                                          : 2
  11-bit subtractor                                     : 2
  12-bit adder                                          : 5
@@ -4771,7 +4840,7 @@ Macro Statistics
  3-bit addsub                                          : 16
  32-bit adder                                          : 23
  32-bit subtractor                                     : 1
- 4-bit adder                                           : 8
+ 4-bit adder                                           : 9
  4-bit adder carry out                                 : 2
  4-bit subtractor                                      : 6
  5-bit adder                                           : 4
@@ -4798,8 +4867,8 @@ Macro Statistics
  10-bit up loadable accumulator                        : 16
  12-bit up loadable accumulator                        : 18
  19-bit up accumulator                                 : 2
-# Registers                                            : 1511
- 1-bit register                                        : 946
+# Registers                                            : 1513
+ 1-bit register                                        : 945
  10-bit register                                       : 18
  11-bit register                                       : 15
  12-bit register                                       : 26
@@ -4820,11 +4889,18 @@ Macro Statistics
  48-bit register                                       : 4
  5-bit register                                        : 4
  6-bit register                                        : 12
- 64-bit register                                       : 11
+ 64-bit register                                       : 12
  7-bit register                                        : 5
  72-bit register                                       : 18
- 8-bit register                                        : 43
- 9-bit register                                        : 5
+ 8-bit register                                        : 44
+ 9-bit register                                        : 6
+# Latches                                              : 15
+ 1-bit latch                                           : 3
+ 16-bit latch                                          : 3
+ 4-bit latch                                           : 3
+ 48-bit latch                                          : 4
+ 56-bit latch                                          : 1
+ 9-bit latch                                           : 1
 # Comparators                                          : 121
  11-bit comparator lessequal                           : 2
  12-bit comparator greatequal                          : 4
@@ -5447,7 +5523,7 @@ Macro Statistics
 # ROMs                                                 : 5
  4x14-bit ROM                                          : 4
  64x32-bit ROM                                         : 1
-# Adders/Subtractors                                   : 130
+# Adders/Subtractors                                   : 131
  10-bit adder                                          : 2
  11-bit subtractor                                     : 2
  12-bit adder                                          : 5
@@ -5460,7 +5536,7 @@ Macro Statistics
  3-bit addsub                                          : 16
  32-bit adder                                          : 23
  32-bit subtractor                                     : 1
- 4-bit adder                                           : 8
+ 4-bit adder                                           : 9
  4-bit adder carry out                                 : 2
  4-bit subtractor                                      : 6
  5-bit adder                                           : 4
@@ -5487,8 +5563,15 @@ Macro Statistics
  10-bit up loadable accumulator                        : 16
  12-bit up loadable accumulator                        : 18
  19-bit up accumulator                                 : 2
-# Registers                                            : 10460
- Flip-Flops                                            : 10460
+# Registers                                            : 10540
+ Flip-Flops                                            : 10540
+# Latches                                              : 15
+ 1-bit latch                                           : 3
+ 16-bit latch                                          : 3
+ 4-bit latch                                           : 3
+ 48-bit latch                                          : 4
+ 56-bit latch                                          : 1
+ 9-bit latch                                           : 1
 # Comparators                                          : 121
  11-bit comparator lessequal                           : 2
  12-bit comparator greatequal                          : 4
@@ -5782,6 +5865,31 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <merge_wr_data_2> (w
 WARNING:Xst:2677 - Node <merge_wr_data_0> of sequential type is unconnected in block <oq_regs_generic_reg_grp_6>.
 WARNING:Xst:2677 - Node <merge_wr_data_1> of sequential type is unconnected in block <oq_regs_generic_reg_grp_6>.
 WARNING:Xst:2677 - Node <merge_wr_data_2> of sequential type is unconnected in block <oq_regs_generic_reg_grp_6>.
+WARNING:Xst:2302 - Naming conflict between instance 1 of unit src_addr and instance src_addr_1 of unit output_port_lookup : using src_addr_110.
+WARNING:Xst:1710 - FF/Latch <port_dstaddr_8> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <port_dstaddr_9> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <port_dstaddr_10> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <port_dstaddr_11> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <port_dstaddr_12> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <port_dstaddr_13> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <port_dstaddr_14> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <port_dstaddr_15> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <port_srcaddr_8> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_9> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_10> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_11> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_12> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_13> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_14> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_15> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_dstaddr_8> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_dstaddr_9> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_dstaddr_10> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_dstaddr_11> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_dstaddr_12> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_dstaddr_13> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_dstaddr_14> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_dstaddr_15> of sequential type is unconnected in block <output_port_lookup>.
 
 Optimizing unit <nf2_top> ...
 
@@ -5878,6 +5986,22 @@ Optimizing unit <sram_arbiter> ...
 Optimizing unit <input_arbiter> ...
 
 Optimizing unit <output_port_lookup> ...
+WARNING:Xst:1710 - FF/Latch <port_srcaddr_1> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <port_srcaddr_3> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <port_srcaddr_5> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <port_srcaddr_7> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ram_in_49> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ram_in_51> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ram_in_53> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ram_in_55> (without init value) has a constant value of 0 in block <output_port_lookup>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ram_in_49> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <ram_in_51> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <ram_in_53> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <ram_in_55> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_1> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_3> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_5> of sequential type is unconnected in block <output_port_lookup>.
+WARNING:Xst:2677 - Node <port_srcaddr_7> of sequential type is unconnected in block <output_port_lookup>.
 
 Optimizing unit <fallthrough_small_fifo_1> ...
 
@@ -8897,7 +9021,7 @@ Changing polarity of register nf2_core/sram64.sram_arbiter/cnet_sram_sm/sram_tri
 Replicating register nf2_core/nf2_dma/nf2_dma_bus_fsm/dma_data_tri_en to handle IOB=TRUE attribute
 Changing polarity of register nf2_core/nf2_dma/nf2_dma_bus_fsm/dma_data_tri_en to handle IOB=TRUE attribute
 Changing polarity of register nf2_core/cpci_bus/cpci_data_tri_en to handle IOB=TRUE attribute
-Found area constraint ratio of 100 (+ 5) on block nf2_top, actual ratio is 45.
+Found area constraint ratio of 100 (+ 5) on block nf2_top, actual ratio is 46.
 INFO:Xst:2260 - The FF/Latch <nf2_core/sram64.sram_arbiter/sram_reg_access/wr_addr_0> in Unit <nf2_top> is equivalent to the following FF/Latch : <nf2_core/sram64.sram_arbiter/sram_reg_access/rd_addr_0> 
 INFO:Xst:2260 - The FF/Latch <nf2_core/sram64.sram_arbiter/sram_reg_access/wr_addr_1> in Unit <nf2_top> is equivalent to the following FF/Latch : <nf2_core/sram64.sram_arbiter/sram_reg_access/rd_addr_1> 
 INFO:Xst:2260 - The FF/Latch <nf2_core/sram64.sram_arbiter/sram_reg_access/wr_addr_2> in Unit <nf2_top> is equivalent to the following FF/Latch : <nf2_core/sram64.sram_arbiter/sram_reg_access/rd_addr_2> 
@@ -9020,79 +9144,79 @@ INFO:Xst:2260 - The FF/Latch <held_wr_a> in Unit <num_pkts_stored_reg> is equiva
 INFO:Xst:2260 - The FF/Latch <held_wr_a> in Unit <oq_addr_lo_reg> is equivalent to the following FF/Latch : <held_wr_b> 
 INFO:Xst:2260 - The FF/Latch <held_wr_a> in Unit <oq_addr_hi_reg> is equivalent to the following FF/Latch : <held_wr_b> 
 INFO:Xst:2260 - The FF/Latch <wr_update_a_delayed> in Unit <max_pkts_in_q_reg> is equivalent to the following FF/Latch : <wr_update_b_delayed> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_12> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_12> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_5> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_5> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_15> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_15> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_8> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_8> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_0> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_0> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_10> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_10> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_3> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_3> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_10> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_10> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_11> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_11> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_12> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_12> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_13> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_13> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_1> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_1> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_15> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_15> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_14> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_14> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_15> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_15> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_6> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_6> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_7> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_7> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_0> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_0> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_1> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_1> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_b_13> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_13> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_15> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_15> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_0> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_0> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_6> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_6> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_1> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_1> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_2> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_2> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_3> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_3> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_4> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_4> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_4> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_4> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_14> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_14> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_5> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_5> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_6> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_6> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_7> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_7> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_5> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_5> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_8> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_8> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_9> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_9> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_9> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_9> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_9> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_9> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_1> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_1> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_b_11> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_11> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_2> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_2> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_12> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_12> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_4> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_4> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_14> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_14> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_7> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_7> 
 INFO:Xst:2260 - The FF/Latch <held_wr_data_b_0> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <held_wr_data_b_1> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_3> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_3> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_8> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_8> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_10> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_10> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_10> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_10> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_b_0> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_0> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_11> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_a_11> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_b_2> in Unit <num_pkts_in_q_reg> is equivalent to the following FF/Latch : <prev_din_b_2> 
 INFO:Xst:2260 - The FF/Latch <held_wr_a> in Unit <num_words_in_q_reg> is equivalent to the following 3 FFs/Latches : <wr_update_a_delayed> <held_wr_b> <wr_update_b_delayed> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_12> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_12> 
 INFO:Xst:2260 - The FF/Latch <prev_din_b_10> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_10> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_13> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_13> 
 INFO:Xst:2260 - The FF/Latch <prev_din_b_11> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_11> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_14> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_14> 
 INFO:Xst:2260 - The FF/Latch <prev_din_b_12> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_12> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_15> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_15> 
 INFO:Xst:2260 - The FF/Latch <prev_din_b_13> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_13> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_16> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_16> 
 INFO:Xst:2260 - The FF/Latch <prev_din_b_14> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_14> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_17> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_17> 
 INFO:Xst:2260 - The FF/Latch <prev_din_b_15> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_15> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_18> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_18> 
 INFO:Xst:2260 - The FF/Latch <prev_din_b_16> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_16> 
 INFO:Xst:2260 - The FF/Latch <prev_din_b_17> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_17> 
 INFO:Xst:2260 - The FF/Latch <prev_din_b_18> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_18> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_0> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_0> 
-INFO:Xst:2260 - The FF/Latch <prev_din_b_0> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_0> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_1> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_1> 
-INFO:Xst:2260 - The FF/Latch <prev_din_b_1> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_1> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_2> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_2> 
-INFO:Xst:2260 - The FF/Latch <prev_din_b_2> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_2> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_3> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_3> 
-INFO:Xst:2260 - The FF/Latch <prev_din_b_3> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_3> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_4> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_4> 
-INFO:Xst:2260 - The FF/Latch <prev_din_b_4> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_4> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_5> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_5> 
-INFO:Xst:2260 - The FF/Latch <prev_din_b_5> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_5> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_6> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_6> 
-INFO:Xst:2260 - The FF/Latch <prev_din_b_6> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_6> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_7> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_7> 
-INFO:Xst:2260 - The FF/Latch <prev_din_b_7> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_7> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_8> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_8> 
-INFO:Xst:2260 - The FF/Latch <prev_din_b_8> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_8> 
-INFO:Xst:2260 - The FF/Latch <wr_new_value_a_9> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_9> 
-INFO:Xst:2260 - The FF/Latch <prev_din_b_9> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_9> 
-INFO:Xst:2260 - The FF/Latch <held_wr_a> in Unit <num_words_left_reg> is equivalent to the following 3 FFs/Latches : <wr_update_a_delayed> <held_wr_b> <wr_update_b_delayed> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_10> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_10> 
 INFO:Xst:2260 - The FF/Latch <wr_new_value_a_11> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_11> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_12> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_12> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_13> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_13> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_14> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_14> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_15> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_15> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_0> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_0> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_16> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_16> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_1> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_1> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_17> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_17> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_2> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_2> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_18> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_18> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_3> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_3> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_4> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_4> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_5> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_5> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_6> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_6> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_7> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_7> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_8> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_8> 
+INFO:Xst:2260 - The FF/Latch <wr_new_value_a_9> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <prev_din_a_9> 
+INFO:Xst:2260 - The FF/Latch <prev_din_b_0> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_0> 
+INFO:Xst:2260 - The FF/Latch <prev_din_b_1> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_1> 
+INFO:Xst:2260 - The FF/Latch <prev_din_b_2> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_2> 
+INFO:Xst:2260 - The FF/Latch <prev_din_b_3> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_3> 
+INFO:Xst:2260 - The FF/Latch <prev_din_b_4> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_4> 
+INFO:Xst:2260 - The FF/Latch <prev_din_b_5> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_5> 
+INFO:Xst:2260 - The FF/Latch <held_wr_a> in Unit <num_words_left_reg> is equivalent to the following 3 FFs/Latches : <wr_update_a_delayed> <held_wr_b> <wr_update_b_delayed> 
+INFO:Xst:2260 - The FF/Latch <prev_din_b_6> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_6> 
+INFO:Xst:2260 - The FF/Latch <prev_din_b_7> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_7> 
+INFO:Xst:2260 - The FF/Latch <prev_din_b_8> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_8> 
+INFO:Xst:2260 - The FF/Latch <prev_din_b_9> in Unit <num_words_left_reg> is equivalent to the following FF/Latch : <wr_new_value_b_9> 
 INFO:Xst:2260 - The FF/Latch <wr_update_a_delayed> in Unit <oq_full_thresh_reg> is equivalent to the following FF/Latch : <wr_update_b_delayed> 
 INFO:Xst:2260 - The FF/Latch <gmac_tx_dvld> in Unit <tx_queue> is equivalent to the following FF/Latch : <tx_mac_state_FSM_FFd2> 
 INFO:Xst:2260 - The FF/Latch <gmac_tx_dvld> in Unit <tx_queue> is equivalent to the following FF/Latch : <tx_mac_state_FSM_FFd2> 
@@ -9186,8 +9310,8 @@ Unit <nf2_top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 8969
- Flip-Flops                                            : 8969
+# Registers                                            : 9049
+ Flip-Flops                                            : 9049
 # Shift Registers                                      : 43
  2-bit shift register                                  : 5
  4-bit shift register                                  : 6
@@ -9220,33 +9344,35 @@ Design Statistics
 # IOs                              : 437
 
 Cell Usage :
-# BELS                             : 17103
+# BELS                             : 17230
 #      BUF                         : 2
-#      GND                         : 119
-#      INV                         : 260
+#      GND                         : 120
+#      INV                         : 261
 #      LUT1                        : 274
-#      LUT2                        : 1679
+#      LUT2                        : 1676
 #      LUT3                        : 3969
-#      LUT4                        : 6583
+#      LUT4                        : 6691
 #      MUXCY                       : 1577
-#      MUXF5                       : 754
+#      MUXF5                       : 773
 #      MUXF6                       : 176
 #      MUXF7                       : 33
-#      VCC                         : 68
+#      VCC                         : 69
 #      XORCY                       : 1609
-# FlipFlops/Latches                : 9013
-#      FD                          : 2163
+# FlipFlops/Latches                : 9389
+#      FD                          : 2244
 #      FDC                         : 616
 #      FDDRRSE                     : 26
 #      FDE                         : 1343
 #      FDP                         : 10
 #      FDPE                        : 256
-#      FDR                         : 2095
+#      FDR                         : 2094
 #      FDRE                        : 2330
 #      FDRS                        : 12
 #      FDRSE                       : 54
 #      FDS                         : 77
 #      FDSE                        : 31
+#      LD                          : 228
+#      LDE                         : 68
 # RAMS                             : 1145
 #      RAM16X1D                    : 839
 #      RAM16X1S                    : 160
@@ -9265,11 +9391,13 @@ Cell Usage :
 #      OBUFT                       : 4
 # DCMs                             : 6
 #      DCM                         : 6
-# Others                           : 30
+# Others                           : 32
+#      cam_mac                     : 1
 #      cdq_rx_fifo_512x36_to_72    : 4
 #      cdq_tx_fifo_256x72_to_36    : 4
 #      net2pci_16x32               : 1
 #      pci2net_16x60               : 1
+#      ram_mem                     : 1
 #      rxfifo_8kx9_to_72           : 4
 #      rxlengthfifo_128x13         : 4
 #      syncfifo_512x72             : 8
@@ -9281,10 +9409,10 @@ Device utilization summary:
 
 Selected Device : 2vp50ff1152-7 
 
- Number of Slices:                    10177  out of  23616    43%  
- Number of Slice Flip Flops:           8534  out of  47232    18%  
- Number of 4 input LUTs:              14901  out of  47232    31%  
-    Number used as logic:             12765
+ Number of Slices:                    10403  out of  23616    44%  
+ Number of Slice Flip Flops:           8910  out of  47232    18%  
+ Number of 4 input LUTs:              15007  out of  47232    31%  
+    Number used as logic:             12871
     Number used as Shift registers:      42
     Number used as RAMs:               2094
  Number of IOs:                         437
@@ -9312,45 +9440,60 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-gtx_clk                            | RGMII_TX_DCM:CLK0      | 512   |
-gtx_clk                            | RGMII_TX_DCM:CLK90     | 8     |
-rgmii_0_rxc                        | RGMII_0_RX_DCM:CLK0    | 167   |
-rgmii_1_rxc                        | RGMII_1_RX_DCM:CLK0    | 167   |
-rgmii_2_rxc                        | RGMII_2_RX_DCM:CLK0    | 167   |
-rgmii_3_rxc                        | RGMII_3_RX_DCM:CLK0    | 167   |
-core_clk                           | CORE_DCM_CLK:CLK0      | 8721  |
-cpci_clk                           | IBUFG+BUFGMUX          | 397   |
------------------------------------+------------------------+-------+
+-----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                       | Clock buffer(FF name)                                             | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-------+
+gtx_clk                                                                                                                            | RGMII_TX_DCM:CLK0                                                 | 512   |
+gtx_clk                                                                                                                            | RGMII_TX_DCM:CLK90                                                | 8     |
+rgmii_0_rxc                                                                                                                        | RGMII_0_RX_DCM:CLK0                                               | 167   |
+rgmii_1_rxc                                                                                                                        | RGMII_1_RX_DCM:CLK0                                               | 167   |
+rgmii_2_rxc                                                                                                                        | RGMII_2_RX_DCM:CLK0                                               | 167   |
+rgmii_3_rxc                                                                                                                        | RGMII_3_RX_DCM:CLK0                                               | 167   |
+core_clk                                                                                                                           | CORE_DCM_CLK:CLK0                                                 | 8801  |
+nf2_core/user_data_path/output_port_lookup/cam_we_not0001(nf2_core/user_data_path/output_port_lookup/cam_we_not00012:O)            | NONE(*)(nf2_core/user_data_path/output_port_lookup/cam_we)        | 1     |
+nf2_core/user_data_path/output_port_lookup/cam_en_not0001(nf2_core/user_data_path/output_port_lookup/cam_en_not00012:O)            | NONE(*)(nf2_core/user_data_path/output_port_lookup/cam_en)        | 1     |
+nf2_core/user_data_path/output_port_lookup/send_pkt_not0001(nf2_core/user_data_path/output_port_lookup/send_pkt_not000160:O)       | NONE(*)(nf2_core/user_data_path/output_port_lookup/send_pkt)      | 1     |
+nf2_core/user_data_path/output_port_lookup/port_dstaddr_not0005(nf2_core/user_data_path/output_port_lookup/port_dstaddr_not00051:O)| NONE(*)(nf2_core/user_data_path/output_port_lookup/port_dstaddr_0)| 8     |
+nf2_core/user_data_path/output_port_lookup/state_nxt_not0001(nf2_core/user_data_path/output_port_lookup/state_nxt_not000162:O)     | NONE(*)(nf2_core/user_data_path/output_port_lookup/state_nxt_0)   | 9     |
+nf2_core/user_data_path/output_port_lookup/state_7                                                                                 | NONE(nf2_core/user_data_path/output_port_lookup/count_0)          | 60    |
+nf2_core/user_data_path/output_port_lookup/state_6                                                                                 | NONE(nf2_core/user_data_path/output_port_lookup/cam_addr_0)       | 52    |
+nf2_core/user_data_path/output_port_lookup/cam_cmp_or0000(nf2_core/user_data_path/output_port_lookup/cam_cmp_or00001:O)            | NONE(*)(nf2_core/user_data_path/output_port_lookup/cam_cmp_0)     | 48    |
+nf2_core/user_data_path/output_port_lookup/state_2                                                                                 | NONE(nf2_core/user_data_path/output_port_lookup/src_addr_0)       | 48    |
+nf2_core/user_data_path/output_port_lookup/state_1                                                                                 | NONE(nf2_core/user_data_path/output_port_lookup/dst_addr_0)       | 64    |
+nf2_core/user_data_path/output_port_lookup/state_0                                                                                 | NONE(nf2_core/user_data_path/output_port_lookup/port_srcaddr_0)   | 4     |
+cpci_clk                                                                                                                           | IBUFG+BUFGMUX                                                     | 397   |
+-----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
-Control Signal                                                                                                                               | Buffer(FF name)                                                                  | Load  |
----------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
-reset(reset1:O)                                                                                                                              | NONE(rgmii_3_io/gmii_txd_rising_1)                                               | 180   |
-nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reset_MAC(nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reset_MAC_f5:O)                    | NONE(nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_tx/tx_crc_gen/CRC_reg_12)| 158   |
-nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/reset_MAC(nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/reset_MAC_f5:O)                    | NONE(nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_tx/tx_crc_gen/CRC_reg_6) | 158   |
-nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/reset_MAC(nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/reset_MAC_f5:O)                    | NONE(nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_crc_gen/CRC_reg_28)| 158   |
-nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/reset_MAC(nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/reset_MAC_f5:O)                    | NONE(nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/mac_tx_data_in_reg_5) | 158   |
-nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/wptr_full/wrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/wptr_full/wrst_n_inv1_INV_0:O)  | NONE(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/wptr_full/wptr_2)               | 10    |
-nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/wptr_full/wrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/wptr_full/wrst_n_inv1_INV_0:O)  | NONE(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/wptr_full/wbin_1)               | 10    |
-nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/rptr_empty/rrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/rptr_empty/rrst_n_inv1_INV_0:O)| NONE(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/rptr_empty/rempty)              | 9     |
-nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/rptr_empty/rrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/rptr_empty/rrst_n_inv1_INV_0:O)| NONE(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/rptr_empty/rptr_3)              | 9     |
-nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_r2w/wrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_r2w/wrst_n_inv1_INV_0:O)    | NONE(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_r2w/wq2_rptr_1)            | 8     |
-nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_w2r/rrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_w2r/rrst_n_inv1_INV_0:O)    | NONE(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_w2r/rq2_wptr_1)            | 8     |
-nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_r2w/wrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_r2w/wrst_n_inv1_INV_0:O)    | NONE(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_r2w/wq2_rptr_2)            | 8     |
-nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_w2r/rrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_w2r/rrst_n_inv1_INV_0:O)    | NONE(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_w2r/rq2_wptr_0)            | 8     |
----------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                               | Buffer(FF name)                                                                 | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-------+
+reset(reset1:O)                                                                                                                              | NONE(rgmii_3_io/gmii_txd_rising_3)                                              | 180   |
+nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reset_MAC(nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reset_MAC_f5:O)                    | NONE(nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_tx/mac_tx_data_in_reg_1)| 158   |
+nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/reset_MAC(nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/reset_MAC_f5:O)                    | NONE(nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_tx/tx_crc_gen/CRC_reg_1)| 158   |
+nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/reset_MAC(nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/reset_MAC_f5:O)                    | NONE(nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_1)        | 158   |
+nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/reset_MAC(nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/reset_MAC_f5:O)                    | NONE(nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/mac_tx_data_in_reg_7)| 158   |
+nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/wptr_full/wrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/wptr_full/wrst_n_inv1_INV_0:O)  | NONE(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/wptr_full/wptr_1)              | 10    |
+nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/wptr_full/wrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/wptr_full/wrst_n_inv1_INV_0:O)  | NONE(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/wptr_full/wptr_2)              | 10    |
+nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/rptr_empty/rrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/rptr_empty/rrst_n_inv1_INV_0:O)| NONE(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/rptr_empty/rempty)             | 9     |
+nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/rptr_empty/rrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/rptr_empty/rrst_n_inv1_INV_0:O)| NONE(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/rptr_empty/rbin_2)             | 9     |
+nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_r2w/wrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_r2w/wrst_n_inv1_INV_0:O)    | NONE(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_r2w/wq1_rptr_2)           | 8     |
+nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_w2r/rrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_w2r/rrst_n_inv1_INV_0:O)    | NONE(nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/sync_w2r/rq2_wptr_0)           | 8     |
+nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_r2w/wrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_r2w/wrst_n_inv1_INV_0:O)    | NONE(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_r2w/wq1_rptr_2)           | 8     |
+nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_w2r/rrst_n_inv(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_w2r/rrst_n_inv1_INV_0:O)    | NONE(nf2_core/nf2_dma/nf2_dma_sync/tx_async_fifo/sync_w2r/rq2_wptr_3)           | 8     |
+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -7
 
-   Minimum period: 8.136ns (Maximum Frequency: 122.903MHz)
-   Minimum input arrival time before clock: 9.586ns
+   Minimum period: 8.134ns (Maximum Frequency: 122.945MHz)
+   Minimum input arrival time before clock: 9.670ns
    Maximum output required time after clock: 4.276ns
    Maximum combinational path delay: 4.773ns
 
@@ -9360,10 +9503,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'gtx_clk'
-  Clock period: 6.831ns (frequency: 146.393MHz)
-  Total number of paths / destination ports: 38668 / 708
+  Clock period: 6.851ns (frequency: 145.965MHz)
+  Total number of paths / destination ports: 38660 / 708
 -------------------------------------------------------------------------
-Delay:               6.831ns (Levels of Logic = 18)
+Delay:               6.851ns (Levels of Logic = 18)
   Source:            nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/conf_tx_no_gen_crc_reg (FF)
   Destination:       nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_0 (FF)
   Source Clock:      gtx_clk rising
@@ -9383,142 +9526,182 @@ Delay:               6.831ns (Levels of Logic = 18)
      MUXCY:CI->O           1   0.036   0.000  Mcompar_tx_state_cmp_lt0000_cy(5) (Mcompar_tx_state_cmp_lt0000_cy(5))
      MUXCY:CI->O           3   0.416   0.415  Mcompar_tx_state_cmp_lt0000_cy(6) (Mcompar_tx_state_cmp_lt0000_cy(6))
      LUT3:I2->O            1   0.275   0.349  tx_state_FSM_FFd9-In2_SW0 (N23)
-     LUT4:I2->O            2   0.275   0.396  tx_state_FSM_FFd9-In2 (N3)
-     LUT4:I2->O            2   0.275   0.396  tx_state_FSM_FFd9-In68 (tx_state_cmp_eq0019)
+     LUT4:I2->O            2   0.275   0.416  tx_state_FSM_FFd9-In2 (N3)
+     LUT4:I3->O            2   0.275   0.396  tx_state_FSM_FFd9-In68 (tx_state_cmp_eq0019)
      LUT4:I2->O            1   0.275   0.000  Mcompar_tx_counter_next_cmp_ne0000_lut(0) (Mcompar_tx_counter_next_cmp_ne0000_lut(0))
      MUXCY:S->O            1   0.334   0.000  Mcompar_tx_counter_next_cmp_ne0000_cy(0) (Mcompar_tx_counter_next_cmp_ne0000_cy(0))
      MUXCY:CI->O           1   0.036   0.000  Mcompar_tx_counter_next_cmp_ne0000_cy(1) (Mcompar_tx_counter_next_cmp_ne0000_cy(1))
      MUXCY:CI->O           1   0.036   0.000  Mcompar_tx_counter_next_cmp_ne0000_cy(2) (Mcompar_tx_counter_next_cmp_ne0000_cy(2))
      MUXCY:CI->O           1   0.036   0.000  Mcompar_tx_counter_next_cmp_ne0000_cy(3) (Mcompar_tx_counter_next_cmp_ne0000_cy(3))
      MUXCY:CI->O          14   0.416   0.570  Mcompar_tx_counter_next_cmp_ne0000_cy(4) (Mcompar_tx_counter_next_cmp_ne0000_cy(4))
-     LUT4:I2->O            1   0.275   0.000  tx_counter_next(9)1 (tx_counter_next(9))
-     FDC:D                     0.208          tx_counter_9
+     LUT4:I2->O            1   0.275   0.000  tx_counter_next(13)1 (tx_counter_next(13))
+     FDC:D                     0.208          tx_counter_13
     ----------------------------------------
-    Total                      6.831ns (4.019ns logic, 2.812ns route)
-                                       (58.8% logic, 41.2% route)
+    Total                      6.851ns (4.019ns logic, 2.832ns route)
+                                       (58.7% logic, 41.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'rgmii_0_rxc'
-  Clock period: 6.312ns (frequency: 158.427MHz)
-  Total number of paths / destination ports: 5544 / 232
+  Clock period: 7.065ns (frequency: 141.548MHz)
+  Total number of paths / destination ports: 10724 / 232
 -------------------------------------------------------------------------
-Delay:               6.312ns (Levels of Logic = 8)
-  Source:            nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/gmii_rxd_in_reg_1 (FF)
+Delay:               7.065ns (Levels of Logic = 18)
+  Source:            nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/conf_rx_jumbo_en_reg (FF)
   Destination:       nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0 (FF)
   Source Clock:      rgmii_0_rxc rising
   Destination Clock: rgmii_0_rxc rising
 
-  Data Path: nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/gmii_rxd_in_reg_1 to nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0
+  Data Path: nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/conf_rx_jumbo_en_reg to nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             17   0.370   0.723  gmii_rxd_in_reg_1 (gmii_rxd_in_reg_1)
-     LUT4:I0->O            1   0.275   0.370  rx_state_FSM_FFd3-In21 (rx_state_FSM_FFd3-In21)
-     LUT4:I3->O            1   0.275   0.350  rx_state_FSM_FFd3-In89_SW1 (N8)
-     LUT3:I2->O            1   0.275   0.000  rx_state_FSM_FFd3-In89_G (N27)
-     MUXF5:I1->O           2   0.303   0.396  rx_state_FSM_FFd3-In89 (rx_state_FSM_FFd3-In89)
-     LUT3:I2->O            5   0.275   0.446  rx_state_FSM_FFd3-In114 (rx_state_FSM_FFd3-In)
+     FDC:C->Q              9   0.370   0.597  conf_rx_jumbo_en_reg (conf_rx_jumbo_en_reg)
+     LUT2:I1->O            1   0.275   0.000  Mcompar_rx_state_cmp_gt0000_lut(2) (Mcompar_rx_state_cmp_gt0000_lut(2))
+     MUXCY:S->O            1   0.334   0.000  Mcompar_rx_state_cmp_gt0000_cy(2) (Mcompar_rx_state_cmp_gt0000_cy(2))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(3) (Mcompar_rx_state_cmp_gt0000_cy(3))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(4) (Mcompar_rx_state_cmp_gt0000_cy(4))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(5) (Mcompar_rx_state_cmp_gt0000_cy(5))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(6) (Mcompar_rx_state_cmp_gt0000_cy(6))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(7) (Mcompar_rx_state_cmp_gt0000_cy(7))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(8) (Mcompar_rx_state_cmp_gt0000_cy(8))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(9) (Mcompar_rx_state_cmp_gt0000_cy(9))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(10) (Mcompar_rx_state_cmp_gt0000_cy(10))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(11) (Mcompar_rx_state_cmp_gt0000_cy(11))
+     MUXCY:CI->O           1   0.416   0.350  Mcompar_rx_state_cmp_gt0000_cy(12) (Mcompar_rx_state_cmp_gt0000_cy(12))
+     LUT4:I2->O            1   0.275   0.349  rx_state_FSM_FFd1-In27 (rx_state_FSM_FFd1-In27)
+     LUT4:I2->O            1   0.275   0.349  rx_state_FSM_FFd1-In42 (rx_state_FSM_FFd1-In42)
+     LUT3:I2->O           19   0.275   0.616  rx_state_FSM_FFd1-In61 (rx_state_FSM_FFd1-In)
      LUT4:I2->O           33   0.275   0.771  rx_crc_init (rx_crc_init)
      begin scope: 'rx_crc_chk'
      LUT2:I1->O           32   0.275   0.671  CRC_reg_not00011 (CRC_reg_not0001)
      FDPE:CE                   0.263          CRC_reg_0
     ----------------------------------------
-    Total                      6.312ns (2.586ns logic, 3.726ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      7.065ns (3.361ns logic, 3.704ns route)
+                                       (47.6% logic, 52.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'rgmii_1_rxc'
-  Clock period: 6.312ns (frequency: 158.427MHz)
-  Total number of paths / destination ports: 5544 / 232
+  Clock period: 7.065ns (frequency: 141.548MHz)
+  Total number of paths / destination ports: 10724 / 232
 -------------------------------------------------------------------------
-Delay:               6.312ns (Levels of Logic = 8)
-  Source:            nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/gmii_rxd_in_reg_1 (FF)
+Delay:               7.065ns (Levels of Logic = 18)
+  Source:            nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/conf_rx_jumbo_en_reg (FF)
   Destination:       nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0 (FF)
   Source Clock:      rgmii_1_rxc rising
   Destination Clock: rgmii_1_rxc rising
 
-  Data Path: nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/gmii_rxd_in_reg_1 to nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0
+  Data Path: nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/conf_rx_jumbo_en_reg to nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             17   0.370   0.723  gmii_rxd_in_reg_1 (gmii_rxd_in_reg_1)
-     LUT4:I0->O            1   0.275   0.370  rx_state_FSM_FFd3-In21 (rx_state_FSM_FFd3-In21)
-     LUT4:I3->O            1   0.275   0.350  rx_state_FSM_FFd3-In89_SW1 (N8)
-     LUT3:I2->O            1   0.275   0.000  rx_state_FSM_FFd3-In89_G (N27)
-     MUXF5:I1->O           2   0.303   0.396  rx_state_FSM_FFd3-In89 (rx_state_FSM_FFd3-In89)
-     LUT3:I2->O            5   0.275   0.446  rx_state_FSM_FFd3-In114 (rx_state_FSM_FFd3-In)
+     FDC:C->Q              9   0.370   0.597  conf_rx_jumbo_en_reg (conf_rx_jumbo_en_reg)
+     LUT2:I1->O            1   0.275   0.000  Mcompar_rx_state_cmp_gt0000_lut(2) (Mcompar_rx_state_cmp_gt0000_lut(2))
+     MUXCY:S->O            1   0.334   0.000  Mcompar_rx_state_cmp_gt0000_cy(2) (Mcompar_rx_state_cmp_gt0000_cy(2))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(3) (Mcompar_rx_state_cmp_gt0000_cy(3))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(4) (Mcompar_rx_state_cmp_gt0000_cy(4))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(5) (Mcompar_rx_state_cmp_gt0000_cy(5))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(6) (Mcompar_rx_state_cmp_gt0000_cy(6))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(7) (Mcompar_rx_state_cmp_gt0000_cy(7))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(8) (Mcompar_rx_state_cmp_gt0000_cy(8))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(9) (Mcompar_rx_state_cmp_gt0000_cy(9))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(10) (Mcompar_rx_state_cmp_gt0000_cy(10))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(11) (Mcompar_rx_state_cmp_gt0000_cy(11))
+     MUXCY:CI->O           1   0.416   0.350  Mcompar_rx_state_cmp_gt0000_cy(12) (Mcompar_rx_state_cmp_gt0000_cy(12))
+     LUT4:I2->O            1   0.275   0.349  rx_state_FSM_FFd1-In27 (rx_state_FSM_FFd1-In27)
+     LUT4:I2->O            1   0.275   0.349  rx_state_FSM_FFd1-In42 (rx_state_FSM_FFd1-In42)
+     LUT3:I2->O           19   0.275   0.616  rx_state_FSM_FFd1-In61 (rx_state_FSM_FFd1-In)
      LUT4:I2->O           33   0.275   0.771  rx_crc_init (rx_crc_init)
      begin scope: 'rx_crc_chk'
      LUT2:I1->O           32   0.275   0.671  CRC_reg_not00011 (CRC_reg_not0001)
      FDPE:CE                   0.263          CRC_reg_0
     ----------------------------------------
-    Total                      6.312ns (2.586ns logic, 3.726ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      7.065ns (3.361ns logic, 3.704ns route)
+                                       (47.6% logic, 52.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'rgmii_2_rxc'
-  Clock period: 6.312ns (frequency: 158.427MHz)
-  Total number of paths / destination ports: 5544 / 232
+  Clock period: 7.065ns (frequency: 141.548MHz)
+  Total number of paths / destination ports: 10724 / 232
 -------------------------------------------------------------------------
-Delay:               6.312ns (Levels of Logic = 8)
-  Source:            nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_rx/gmii_rxd_in_reg_1 (FF)
+Delay:               7.065ns (Levels of Logic = 18)
+  Source:            nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_rx/conf_rx_jumbo_en_reg (FF)
   Destination:       nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0 (FF)
   Source Clock:      rgmii_2_rxc rising
   Destination Clock: rgmii_2_rxc rising
 
-  Data Path: nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_rx/gmii_rxd_in_reg_1 to nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0
+  Data Path: nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_rx/conf_rx_jumbo_en_reg to nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             17   0.370   0.723  gmii_rxd_in_reg_1 (gmii_rxd_in_reg_1)
-     LUT4:I0->O            1   0.275   0.370  rx_state_FSM_FFd3-In21 (rx_state_FSM_FFd3-In21)
-     LUT4:I3->O            1   0.275   0.350  rx_state_FSM_FFd3-In89_SW1 (N8)
-     LUT3:I2->O            1   0.275   0.000  rx_state_FSM_FFd3-In89_G (N27)
-     MUXF5:I1->O           2   0.303   0.396  rx_state_FSM_FFd3-In89 (rx_state_FSM_FFd3-In89)
-     LUT3:I2->O            5   0.275   0.446  rx_state_FSM_FFd3-In114 (rx_state_FSM_FFd3-In)
+     FDC:C->Q              9   0.370   0.597  conf_rx_jumbo_en_reg (conf_rx_jumbo_en_reg)
+     LUT2:I1->O            1   0.275   0.000  Mcompar_rx_state_cmp_gt0000_lut(2) (Mcompar_rx_state_cmp_gt0000_lut(2))
+     MUXCY:S->O            1   0.334   0.000  Mcompar_rx_state_cmp_gt0000_cy(2) (Mcompar_rx_state_cmp_gt0000_cy(2))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(3) (Mcompar_rx_state_cmp_gt0000_cy(3))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(4) (Mcompar_rx_state_cmp_gt0000_cy(4))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(5) (Mcompar_rx_state_cmp_gt0000_cy(5))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(6) (Mcompar_rx_state_cmp_gt0000_cy(6))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(7) (Mcompar_rx_state_cmp_gt0000_cy(7))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(8) (Mcompar_rx_state_cmp_gt0000_cy(8))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(9) (Mcompar_rx_state_cmp_gt0000_cy(9))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(10) (Mcompar_rx_state_cmp_gt0000_cy(10))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(11) (Mcompar_rx_state_cmp_gt0000_cy(11))
+     MUXCY:CI->O           1   0.416   0.350  Mcompar_rx_state_cmp_gt0000_cy(12) (Mcompar_rx_state_cmp_gt0000_cy(12))
+     LUT4:I2->O            1   0.275   0.349  rx_state_FSM_FFd1-In27 (rx_state_FSM_FFd1-In27)
+     LUT4:I2->O            1   0.275   0.349  rx_state_FSM_FFd1-In42 (rx_state_FSM_FFd1-In42)
+     LUT3:I2->O           19   0.275   0.616  rx_state_FSM_FFd1-In61 (rx_state_FSM_FFd1-In)
      LUT4:I2->O           33   0.275   0.771  rx_crc_init (rx_crc_init)
      begin scope: 'rx_crc_chk'
      LUT2:I1->O           32   0.275   0.671  CRC_reg_not00011 (CRC_reg_not0001)
      FDPE:CE                   0.263          CRC_reg_0
     ----------------------------------------
-    Total                      6.312ns (2.586ns logic, 3.726ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      7.065ns (3.361ns logic, 3.704ns route)
+                                       (47.6% logic, 52.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'rgmii_3_rxc'
-  Clock period: 6.312ns (frequency: 158.427MHz)
-  Total number of paths / destination ports: 5544 / 232
+  Clock period: 7.065ns (frequency: 141.548MHz)
+  Total number of paths / destination ports: 10724 / 232
 -------------------------------------------------------------------------
-Delay:               6.312ns (Levels of Logic = 8)
-  Source:            nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_rx/gmii_rxd_in_reg_1 (FF)
+Delay:               7.065ns (Levels of Logic = 18)
+  Source:            nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_rx/conf_rx_jumbo_en_reg (FF)
   Destination:       nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0 (FF)
   Source Clock:      rgmii_3_rxc rising
   Destination Clock: rgmii_3_rxc rising
 
-  Data Path: nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_rx/gmii_rxd_in_reg_1 to nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0
+  Data Path: nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_rx/conf_rx_jumbo_en_reg to nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             17   0.370   0.723  gmii_rxd_in_reg_1 (gmii_rxd_in_reg_1)
-     LUT4:I0->O            1   0.275   0.370  rx_state_FSM_FFd3-In21 (rx_state_FSM_FFd3-In21)
-     LUT4:I3->O            1   0.275   0.350  rx_state_FSM_FFd3-In89_SW1 (N8)
-     LUT3:I2->O            1   0.275   0.000  rx_state_FSM_FFd3-In89_G (N27)
-     MUXF5:I1->O           2   0.303   0.396  rx_state_FSM_FFd3-In89 (rx_state_FSM_FFd3-In89)
-     LUT3:I2->O            5   0.275   0.446  rx_state_FSM_FFd3-In114 (rx_state_FSM_FFd3-In)
+     FDC:C->Q              9   0.370   0.597  conf_rx_jumbo_en_reg (conf_rx_jumbo_en_reg)
+     LUT2:I1->O            1   0.275   0.000  Mcompar_rx_state_cmp_gt0000_lut(2) (Mcompar_rx_state_cmp_gt0000_lut(2))
+     MUXCY:S->O            1   0.334   0.000  Mcompar_rx_state_cmp_gt0000_cy(2) (Mcompar_rx_state_cmp_gt0000_cy(2))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(3) (Mcompar_rx_state_cmp_gt0000_cy(3))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(4) (Mcompar_rx_state_cmp_gt0000_cy(4))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(5) (Mcompar_rx_state_cmp_gt0000_cy(5))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(6) (Mcompar_rx_state_cmp_gt0000_cy(6))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(7) (Mcompar_rx_state_cmp_gt0000_cy(7))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(8) (Mcompar_rx_state_cmp_gt0000_cy(8))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(9) (Mcompar_rx_state_cmp_gt0000_cy(9))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(10) (Mcompar_rx_state_cmp_gt0000_cy(10))
+     MUXCY:CI->O           1   0.036   0.000  Mcompar_rx_state_cmp_gt0000_cy(11) (Mcompar_rx_state_cmp_gt0000_cy(11))
+     MUXCY:CI->O           1   0.416   0.350  Mcompar_rx_state_cmp_gt0000_cy(12) (Mcompar_rx_state_cmp_gt0000_cy(12))
+     LUT4:I2->O            1   0.275   0.349  rx_state_FSM_FFd1-In27 (rx_state_FSM_FFd1-In27)
+     LUT4:I2->O            1   0.275   0.349  rx_state_FSM_FFd1-In42 (rx_state_FSM_FFd1-In42)
+     LUT3:I2->O           19   0.275   0.616  rx_state_FSM_FFd1-In61 (rx_state_FSM_FFd1-In)
      LUT4:I2->O           33   0.275   0.771  rx_crc_init (rx_crc_init)
      begin scope: 'rx_crc_chk'
      LUT2:I1->O           32   0.275   0.671  CRC_reg_not00011 (CRC_reg_not0001)
      FDPE:CE                   0.263          CRC_reg_0
     ----------------------------------------
-    Total                      6.312ns (2.586ns logic, 3.726ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      7.065ns (3.361ns logic, 3.704ns route)
+                                       (47.6% logic, 52.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'core_clk'
-  Clock period: 8.136ns (frequency: 122.903MHz)
-  Total number of paths / destination ports: 748111 / 19799
+  Clock period: 8.134ns (frequency: 122.945MHz)
+  Total number of paths / destination ports: 743954 / 19870
 -------------------------------------------------------------------------
-Delay:               8.136ns (Levels of Logic = 12)
+Delay:               8.134ns (Levels of Logic = 12)
   Source:            nf2_core/user_data_path/output_queues/store_pkt/store_state_2 (FF)
   Destination:       nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/bypass_read_b (FF)
   Source Clock:      core_clk rising
@@ -9528,30 +9711,52 @@ Delay:               8.136ns (Levels of Logic = 12)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              15   0.370   0.641  store_state_2 (store_state_2)
+     FD:C->Q              16   0.370   0.648  store_state_2 (store_state_2)
      LUT4:I2->O            1   0.275   0.350  store_state_next_cmp_eq0003_SW0 (N48)
      LUT4:I2->O            4   0.275   0.511  store_state_next_cmp_eq0003 (store_state_next_cmp_eq0003)
-     LUT2:I1->O          156   0.275   0.945  pkt_stored1 (pkt_stored)
+     LUT2:I1->O          152   0.275   0.940  pkt_stored1 (pkt_stored)
      end scope: 'store_pkt'
      begin scope: 'oq_regs'
      begin scope: 'oq_reg_instances'
      begin scope: 'num_words_in_q_reg'
      LUT2:I1->O            2   0.275   0.396  bypass_read_b_and000041 (N41)
-     LUT4:I2->O            3   0.275   0.415  ram_addr_a(0)5 (N25)
-     LUT3:I2->O            1   0.275   0.349  ram_addr_a(1)3 (ram_addr_a(1)3)
-     LUT4:I2->O            3   0.275   0.435  ram_addr_a(1)18 (ram_addr_a(1))
-     LUT4:I3->O            2   0.275   0.416  bypass_read_b_and000011 (N11)
-     LUT4:I3->O            1   0.275   0.349  bypass_read_b_and000051_SW0 (N01)
+     LUT4:I2->O            4   0.275   0.431  ram_addr_a(0)5 (N25)
+     LUT4:I2->O            1   0.275   0.349  ram_addr_a(0)9_SW0 (N8)
+     LUT3:I2->O            3   0.275   0.435  ram_addr_a(0)18 (ram_addr_a(0))
+     LUT4:I3->O            2   0.275   0.396  bypass_read_b_and000011 (N11)
+     LUT4:I2->O            1   0.275   0.349  bypass_read_b_and000051_SW0 (N01)
      LUT4:I2->O            1   0.275   0.000  bypass_read_b_and000051 (bypass_read_b_and0000)
      FD:D                      0.208          bypass_read_b
     ----------------------------------------
-    Total                      8.136ns (3.328ns logic, 4.808ns route)
+    Total                      8.134ns (3.328ns logic, 4.806ns route)
                                        (40.9% logic, 59.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'nf2_core/user_data_path/output_port_lookup/state_7'
+  Clock period: 1.796ns (frequency: 556.824MHz)
+  Total number of paths / destination ports: 14 / 8
+-------------------------------------------------------------------------
+Delay:               1.796ns (Levels of Logic = 1)
+  Source:            nf2_core/user_data_path/output_port_lookup/count_0 (LATCH)
+  Destination:       nf2_core/user_data_path/output_port_lookup/count_0 (LATCH)
+  Source Clock:      nf2_core/user_data_path/output_port_lookup/state_7 falling
+  Destination Clock: nf2_core/user_data_path/output_port_lookup/state_7 falling
+
+  Data Path: nf2_core/user_data_path/output_port_lookup/count_0 to nf2_core/user_data_path/output_port_lookup/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               6   0.536   0.445  count_0 (count_0)
+     INV:I->O              1   0.275   0.331  Madd_count_add0000_xor(0)11_INV_0 (count_add0000(0))
+     LD:D                      0.208          count_0
+    ----------------------------------------
+    Total                      1.796ns (1.019ns logic, 0.777ns route)
+                                       (56.7% logic, 43.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'cpci_clk'
   Clock period: 7.683ns (frequency: 130.159MHz)
-  Total number of paths / destination ports: 9020 / 562
+  Total number of paths / destination ports: 9003 / 562
 -------------------------------------------------------------------------
 Delay:               7.683ns (Levels of Logic = 15)
   Source:            nf2_core/nf2_dma/nf2_dma_bus_fsm/watchdog_timer_7 (FF)
@@ -9700,9 +9905,9 @@ Offset:              3.274ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'core_clk'
-  Total number of paths / destination ports: 75198 / 8509
+  Total number of paths / destination ports: 75362 / 8517
 -------------------------------------------------------------------------
-Offset:              9.586ns (Levels of Logic = 40)
+Offset:              9.670ns (Levels of Logic = 40)
   Source:            nf2_reset (PAD)
   Destination:       nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/Mram_reg_file32 (RAM)
   Destination Clock: core_clk rising
@@ -9712,13 +9917,13 @@ Offset:              9.586ns (Levels of Logic = 40)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            14   0.878   0.650  nf2_reset_IBUF (_and0000)
-     LUT2:I1->O          366   0.275   1.282  reset1_7 (reset1_7)
+     LUT2:I1->O          369   0.275   1.286  reset1_7 (reset1_7)
      begin scope: 'nf2_core/mac_groups[0].nf2_mac_grp'
      begin scope: 'mac_grp_regs'
      LUT4:I0->O           36   0.275   0.695  reg_file_in(0)11 (N18)
      LUT4:I2->O           64   0.275   0.717  reg_file_addr(3)1 (reg_file_addr(3))
-     RAM16X1S:A3->O        2   0.694   0.396  Mram_reg_file1 (reg_file_out(0))
-     LUT4:I2->O            1   0.275   0.000  Madd_reg_file_in_addsub0000_lut(0) (Madd_reg_file_in_addsub0000_lut(0))
+     RAM16X1S:A3->O        2   0.694   0.476  Mram_reg_file1 (reg_file_out(0))
+     LUT2:I1->O            1   0.275   0.000  Madd_reg_file_in_addsub0000_lut(0) (Madd_reg_file_in_addsub0000_lut(0))
      MUXCY:S->O            1   0.334   0.000  Madd_reg_file_in_addsub0000_cy(0) (Madd_reg_file_in_addsub0000_cy(0))
      MUXCY:CI->O           1   0.036   0.000  Madd_reg_file_in_addsub0000_cy(1) (Madd_reg_file_in_addsub0000_cy(1))
      MUXCY:CI->O           1   0.036   0.000  Madd_reg_file_in_addsub0000_cy(2) (Madd_reg_file_in_addsub0000_cy(2))
@@ -9754,8 +9959,89 @@ Offset:              9.586ns (Levels of Logic = 40)
      LUT4:I2->O            1   0.275   0.000  reg_file_in(31)1 (reg_file_in(31))
      RAM16X1S:D                0.413          Mram_reg_file32
     ----------------------------------------
-    Total                      9.586ns (5.497ns logic, 4.089ns route)
-                                       (57.3% logic, 42.7% route)
+    Total                      9.670ns (5.497ns logic, 4.173ns route)
+                                       (56.8% logic, 43.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'nf2_core/user_data_path/output_port_lookup/cam_we_not0001'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.140ns (Levels of Logic = 1)
+  Source:            nf2_core/user_data_path/output_port_lookup/mac:busy (PAD)
+  Destination:       nf2_core/user_data_path/output_port_lookup/cam_we (LATCH)
+  Destination Clock: nf2_core/user_data_path/output_port_lookup/cam_we_not0001 falling
+
+  Data Path: nf2_core/user_data_path/output_port_lookup/mac:busy to nf2_core/user_data_path/output_port_lookup/cam_we
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    cam_mac:busy          11   0.000   0.657  mac (cam_busy)
+     LUT3:I0->O            2   0.275   0.000  cam_we_not000111 (cam_we_mux0000)
+     LD:D                      0.208          cam_we
+    ----------------------------------------
+    Total                      1.140ns (0.483ns logic, 0.657ns route)
+                                       (42.4% logic, 57.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'nf2_core/user_data_path/output_port_lookup/send_pkt_not0001'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.140ns (Levels of Logic = 1)
+  Source:            nf2_core/user_data_path/output_port_lookup/mac:busy (PAD)
+  Destination:       nf2_core/user_data_path/output_port_lookup/send_pkt (LATCH)
+  Destination Clock: nf2_core/user_data_path/output_port_lookup/send_pkt_not0001 falling
+
+  Data Path: nf2_core/user_data_path/output_port_lookup/mac:busy to nf2_core/user_data_path/output_port_lookup/send_pkt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    cam_mac:busy          11   0.000   0.657  mac (cam_busy)
+     LUT4:I0->O            1   0.275   0.000  send_pkt_mux00001 (send_pkt_mux0000)
+     LD:D                      0.208          send_pkt
+    ----------------------------------------
+    Total                      1.140ns (0.483ns logic, 0.657ns route)
+                                       (42.4% logic, 57.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'nf2_core/user_data_path/output_port_lookup/port_dstaddr_not0005'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              1.964ns (Levels of Logic = 2)
+  Source:            nf2_core/user_data_path/output_port_lookup/mac:busy (PAD)
+  Destination:       nf2_core/user_data_path/output_port_lookup/port_dstaddr_0 (LATCH)
+  Destination Clock: nf2_core/user_data_path/output_port_lookup/port_dstaddr_not0005 falling
+
+  Data Path: nf2_core/user_data_path/output_port_lookup/mac:busy to nf2_core/user_data_path/output_port_lookup/port_dstaddr_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    cam_mac:busy          11   0.000   0.657  mac (cam_busy)
+     LUT3:I0->O            4   0.275   0.549  port_dstaddr_mux0000(0)11 (N2)
+     LUT4:I0->O            1   0.275   0.000  port_dstaddr_mux0000(6)1 (port_dstaddr_mux0000(6))
+     LD:D                      0.208          port_dstaddr_6
+    ----------------------------------------
+    Total                      1.964ns (0.758ns logic, 1.206ns route)
+                                       (38.6% logic, 61.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'nf2_core/user_data_path/output_port_lookup/state_nxt_not0001'
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Offset:              1.140ns (Levels of Logic = 1)
+  Source:            nf2_core/user_data_path/output_port_lookup/mac:busy (PAD)
+  Destination:       nf2_core/user_data_path/output_port_lookup/state_nxt_5 (LATCH)
+  Destination Clock: nf2_core/user_data_path/output_port_lookup/state_nxt_not0001 falling
+
+  Data Path: nf2_core/user_data_path/output_port_lookup/mac:busy to nf2_core/user_data_path/output_port_lookup/state_nxt_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    cam_mac:busy          11   0.000   0.657  mac (cam_busy)
+     LUT3:I0->O            1   0.275   0.000  cam_en_not000111 (N6)
+     LD:D                      0.208          state_nxt_5
+    ----------------------------------------
+    Total                      1.140ns (0.483ns logic, 0.657ns route)
+                                       (42.4% logic, 57.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'cpci_clk'
@@ -9839,6 +10125,101 @@ Offset:              3.293ns (Levels of Logic = 1)
     ----------------------------------------
     Total                      3.293ns (2.962ns logic, 0.332ns route)
                                        (89.9% logic, 10.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'nf2_core/user_data_path/output_port_lookup/cam_en_not0001'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.536ns (Levels of Logic = 0)
+  Source:            nf2_core/user_data_path/output_port_lookup/cam_en (LATCH)
+  Destination:       nf2_core/user_data_path/output_port_lookup/mac:en (PAD)
+  Source Clock:      nf2_core/user_data_path/output_port_lookup/cam_en_not0001 falling
+
+  Data Path: nf2_core/user_data_path/output_port_lookup/cam_en to nf2_core/user_data_path/output_port_lookup/mac:en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               0   0.536   0.000  cam_en (cam_en)
+    cam_mac:en                 0.000          mac
+    ----------------------------------------
+    Total                      0.536ns (0.536ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'nf2_core/user_data_path/output_port_lookup/cam_we_not0001'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.536ns (Levels of Logic = 0)
+  Source:            nf2_core/user_data_path/output_port_lookup/cam_we (LATCH)
+  Destination:       nf2_core/user_data_path/output_port_lookup/mac:we (PAD)
+  Source Clock:      nf2_core/user_data_path/output_port_lookup/cam_we_not0001 falling
+
+  Data Path: nf2_core/user_data_path/output_port_lookup/cam_we to nf2_core/user_data_path/output_port_lookup/mac:we
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               0   0.536   0.000  cam_we (cam_we)
+    cam_mac:we                 0.000          mac
+    ----------------------------------------
+    Total                      0.536ns (0.536ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'nf2_core/user_data_path/output_port_lookup/state_6'
+  Total number of paths / destination ports: 52 / 52
+-------------------------------------------------------------------------
+Offset:              0.536ns (Levels of Logic = 0)
+  Source:            nf2_core/user_data_path/output_port_lookup/cam_in_47 (LATCH)
+  Destination:       nf2_core/user_data_path/output_port_lookup/mac:din(47) (PAD)
+  Source Clock:      nf2_core/user_data_path/output_port_lookup/state_6 falling
+
+  Data Path: nf2_core/user_data_path/output_port_lookup/cam_in_47 to nf2_core/user_data_path/output_port_lookup/mac:din(47)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               0   0.536   0.000  cam_in_47 (cam_in_47)
+    cam_mac:din(47)            0.000          mac
+    ----------------------------------------
+    Total                      0.536ns (0.536ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'nf2_core/user_data_path/output_port_lookup/cam_cmp_or0000'
+  Total number of paths / destination ports: 48 / 48
+-------------------------------------------------------------------------
+Offset:              0.536ns (Levels of Logic = 0)
+  Source:            nf2_core/user_data_path/output_port_lookup/cam_cmp_47 (LATCH)
+  Destination:       nf2_core/user_data_path/output_port_lookup/mac:cmp_din(47) (PAD)
+  Source Clock:      nf2_core/user_data_path/output_port_lookup/cam_cmp_or0000 falling
+
+  Data Path: nf2_core/user_data_path/output_port_lookup/cam_cmp_47 to nf2_core/user_data_path/output_port_lookup/mac:cmp_din(47)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               0   0.536   0.000  cam_cmp_47 (cam_cmp_47)
+    cam_mac:cmp_din(47)        0.000          mac
+    ----------------------------------------
+    Total                      0.536ns (0.536ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'nf2_core/user_data_path/output_port_lookup/state_7'
+  Total number of paths / destination ports: 56 / 56
+-------------------------------------------------------------------------
+Offset:              0.914ns (Levels of Logic = 0)
+  Source:            nf2_core/user_data_path/output_port_lookup/ram_addr_3 (LATCH)
+  Destination:       nf2_core/user_data_path/output_port_lookup/port:addra(3) (PAD)
+  Source Clock:      nf2_core/user_data_path/output_port_lookup/state_7 falling
+
+  Data Path: nf2_core/user_data_path/output_port_lookup/ram_addr_3 to nf2_core/user_data_path/output_port_lookup/port:addra(3)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.536   0.378  ram_addr_3 (ram_addr_3)
+    ram_mem:addra(3)           0.000          port
+    ----------------------------------------
+    Total                      0.914ns (0.536ns logic, 0.378ns route)
+                                       (58.6% logic, 41.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'rgmii_3_rxc'
@@ -9950,7 +10331,7 @@ Offset:              3.909ns (Levels of Logic = 8)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 845 / 719
+  Total number of paths / destination ports: 847 / 721
 -------------------------------------------------------------------------
 Delay:               4.773ns (Levels of Logic = 3)
   Source:            nf2_reset (PAD)
@@ -9970,15 +10351,15 @@ Delay:               4.773ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 319.00 secs
-Total CPU time to Xst completion: 316.20 secs
+Total REAL time to Xst completion: 311.00 secs
+Total CPU time to Xst completion: 309.24 secs
  
 --> 
 
 
-Total memory usage is 863360 kilobytes
+Total memory usage is 871632 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 3544 (   0 filtered)
-Number of infos    :  228 (   0 filtered)
+Number of warnings : 3616 (   0 filtered)
+Number of infos    :  239 (   0 filtered)
 

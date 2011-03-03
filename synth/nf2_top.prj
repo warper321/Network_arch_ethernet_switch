@@ -3,6 +3,9 @@ verilog work /exports/homes/mbruckel/netfpga/lib/verilog/core/common/src/udp_def
 verilog work /exports/homes/mbruckel/netfpga/projects/cpci/include/registers.v
 verilog work ../include/registers.v
 verilog work ../src/output_port_lookup/output_port_lookup.v
+verilog work ../src/src_coregen/cam_mac.v
+verilog work ../src/src_coregen/ram_mem.v
+verilog work ../src/src_coregen/ram_port.v
 verilog work /exports/homes/mbruckel/netfpga/lib/verilog/core/io_queues/cpu_dma_queue/src/cpu_dma_queue_no_regs.v
 verilog work /exports/homes/mbruckel/netfpga/lib/verilog/core/io_queues/cpu_dma_queue/src/cpu_dma_queue_regs.v
 verilog work /exports/homes/mbruckel/netfpga/lib/verilog/core/io_queues/cpu_dma_queue/src/cpu_dma_queue.v

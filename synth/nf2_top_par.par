@@ -1,9 +1,10 @@
 Release 10.1.03 par K.39 (lin64)
 Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
 
-ecs-network::  Mon Feb 07 11:15:20 2011
+ecs-network::  Thu Mar 03 15:49:34 2011
 
-par -intstyle ise -ol high -w nf2_top.ncd nf2_top_par.ncd 
+par -intstyle ise -ol high -smartguide smartguide.ncd -w nf2_top.ncd
+nf2_top_par.ncd 
 
 
 Constraints file: nf2_top.pcf.
@@ -19,6 +20,10 @@ Device speed data version:  "PRODUCTION 1.94 2008-07-25".
 
 
 
+INFO:Par:402 - SmartGuide was run during Map. Since all guiding (mapping, packing, placement and routing) is completed
+   in MAP, PAR does not require the use of the guide switches. The -smartguide switch only generates a post place and
+   route guide report. Runtime can be reduced, if this report is not generated. PAR will automatically generate the
+   SmartGuide summary report based on the guide file used during MAP.
 Device Utilization Summary:
 
    Number of BUFGMUXs                        8 out of 16     50%
@@ -28,8 +33,8 @@ Device Utilization Summary:
    Number of External IOBs                 356 out of 692    51%
       Number of LOCed IOBs                 356 out of 356   100%
 
-   Number of RAMB16s                        89 out of 232    38%
-   Number of SLICEs                      12638 out of 23616  53%
+   Number of RAMB16s                        90 out of 232    38%
+   Number of SLICEs                      13048 out of 23616  55%
 
 
 Overall effort level (-ol):   High 
@@ -40,33 +45,50 @@ Finished initial Timing Analysis.  REAL time: 46 secs
 
 Starting Router
 
-Phase 1: 103632 unrouted;       REAL time: 58 secs 
+Phase 1: 34034 unrouted;       REAL time: 57 secs 
 
-Phase 2: 85421 unrouted;       REAL time: 1 mins 7 secs 
+Phase 2: 24957 unrouted;       REAL time: 1 mins 4 secs 
 
-Phase 3: 22597 unrouted;       REAL time: 1 mins 22 secs 
+Phase 3: 11505 unrouted;       REAL time: 1 mins 12 secs 
 
-Phase 4: 22597 unrouted; (1081232)      REAL time: 1 mins 23 secs 
+Phase 4: 11505 unrouted; (115233)      REAL time: 1 mins 13 secs 
 
-Phase 5: 23109 unrouted; (28079)      REAL time: 1 mins 39 secs 
+Phase 5: 12384 unrouted; (24845)      REAL time: 1 mins 22 secs 
 
-Phase 6: 23234 unrouted; (0)      REAL time: 1 mins 41 secs 
+Phase 6: 12461 unrouted; (0)      REAL time: 1 mins 24 secs 
 
-Phase 7: 0 unrouted; (436)      REAL time: 2 mins 27 secs 
+Phase 7: 0 unrouted; (0)      REAL time: 2 mins 
 
-Phase 8: 0 unrouted; (436)      REAL time: 2 mins 41 secs 
+Phase 8: 0 unrouted; (0)      REAL time: 2 mins 12 secs 
 
-Updating file: nf2_top_par.ncd with current fully routed design.
+Phase 9: 0 unrouted; (0)      REAL time: 2 mins 42 secs 
 
-Phase 9: 0 unrouted; (0)      REAL time: 4 mins 18 secs 
+WARNING:Route - CLK Net:nf2_core/user_data_path/output_port_lookup/state(6) is being routed on general routing
+   resources. If you are trying to use local clocking techniques, evaluate the placement of the clock's source and loads
+   to ensure it meets the guidelines for local clocking. Otherwise, consider placing this clock on a dedicated clock
+   routing resource. For more information on clock routing resources, see the target architecture's user guide.
 
-Phase 10: 0 unrouted; (0)      REAL time: 4 mins 23 secs 
+Total REAL time to Router completion: 2 mins 48 secs 
+Total CPU time to Router completion: 2 mins 48 secs 
 
-Phase 11: 0 unrouted; (0)      REAL time: 4 mins 55 secs 
+Loading database for application par from file: "smartguide.ncd"
+   "nf2_top" is an NCD, version 3.2, device xc2vp50, package ff1152, speed -7
 
+  SmartGuide Results
+  ------------------
+  This section describes the guide results after invoking the Router. This
+  report accurately reflects the differences between the input design
+  and the guide design.
 
-Total REAL time to Router completion: 5 mins 2 secs 
-Total CPU time to Router completion: 5 mins 1 secs 
+  Number of Components in the input design    |  14135
+    Number of guided Components               |  11423 out of  14135  80.8%
+    Number of re-implemented Components       |   2085 out of  14135  14.8%
+    Number of new/changed Components          |    627 out of  14135   4.4%
+  Number of Nets in the input design          |  32361
+    Number of guided Nets                     |  21471 out of  32361  66.3%
+    Number of partially guided Nets           |   2997 out of  32361   9.3%
+    Number of re-routed Nets                  |   6533 out of  32361  20.2%
+    Number of new/changed Nets                |   1360 out of  32361   4.2%
 
 Partition Implementation Status
 -------------------------------
@@ -84,21 +106,67 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|        core_clk_int |     BUFGMUX1P|Yes   | 8526 |  0.521     |  1.550      |
+|  rx_rgmii_0_clk_int |     BUFGMUX4S|Yes   |  236 |  0.329     |  1.508      |
 +---------------------+--------------+------+------+------------+-------------+
-|  rx_rgmii_0_clk_int |     BUFGMUX4S|Yes   |  235 |  0.329     |  1.508      |
-+---------------------+--------------+------+------+------------+-------------+
-|  rx_rgmii_1_clk_int |     BUFGMUX6S|Yes   |  231 |  0.470     |  1.511      |
-+---------------------+--------------+------+------+------------+-------------+
-|  rx_rgmii_2_clk_int |     BUFGMUX5S|Yes   |  234 |  0.476     |  1.510      |
-+---------------------+--------------+------+------+------------+-------------+
-|  rx_rgmii_3_clk_int |     BUFGMUX7S|Yes   |  225 |  0.302     |  1.509      |
+|    tx_rgmii_clk_int |     BUFGMUX2S|Yes   |  666 |  0.487     |  1.537      |
 +---------------------+--------------+------+------+------------+-------------+
 |        cpci_clk_int |     BUFGMUX0S|Yes   |  404 |  0.425     |  1.551      |
 +---------------------+--------------+------+------+------------+-------------+
-|    tx_rgmii_clk_int |     BUFGMUX2S|Yes   |  665 |  0.499     |  1.537      |
+|  rx_rgmii_1_clk_int |     BUFGMUX6S|Yes   |  232 |  0.462     |  1.511      |
++---------------------+--------------+------+------+------------+-------------+
+|        core_clk_int |     BUFGMUX1P|Yes   | 8784 |  0.521     |  1.550      |
++---------------------+--------------+------+------+------------+-------------+
+|  rx_rgmii_2_clk_int |     BUFGMUX5S|Yes   |  235 |  0.476     |  1.510      |
++---------------------+--------------+------+------+------------+-------------+
+|  rx_rgmii_3_clk_int |     BUFGMUX7S|Yes   |  224 |  0.302     |  1.509      |
 +---------------------+--------------+------+------+------------+-------------+
 |  tx_rgmii_clk90_int |     BUFGMUX3P|Yes   |    8 |  0.136     |  1.517      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+|         up/state(0) |         Local|      |   24 |  0.005     |  2.683      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+|         up/state(7) |         Local|      |   38 |  0.631     |  2.843      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+|up/state_nxt_not0001 |              |      |      |            |             |
+|                     |         Local|      |    9 |  0.292     |  2.878      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+| up/send_pkt_not0001 |         Local|      |    1 |  0.000     |  0.724      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+|         up/state(6) |         Local|      |   41 |  1.317     |  2.793      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+|   up/cam_cmp_or0000 |         Local|      |   32 |  0.205     |  2.538      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+|         up/state(1) |         Local|      |   53 |  0.344     |  2.796      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+|up/port_dstaddr_not0 |              |      |      |            |             |
+|                 005 |         Local|      |    6 |  0.160     |  1.473      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+|         up/state(2) |         Local|      |   45 |  0.302     |  2.723      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+|   up/cam_en_not0001 |         Local|      |    1 |  0.000     |  0.724      |
++---------------------+--------------+------+------+------------+-------------+
+|nf2_core/user_data_p |              |      |      |            |             |
+|ath/output_port_look |              |      |      |            |             |
+|   up/cam_we_not0001 |         Local|      |    1 |  0.000     |  0.539      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -115,13 +183,13 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
                                             |         |    Slack   | Achievable | Errors |    Score   
 ------------------------------------------------------------------------------------------------------
-  TS_core_clk_int = PERIOD TIMEGRP "core_cl | SETUP   |     0.000ns|     8.000ns|       0|           0
+  TS_core_clk_int = PERIOD TIMEGRP "core_cl | SETUP   |     0.034ns|     7.966ns|       0|           0
   k_int" 8 ns HIGH 50%                      | HOLD    |     0.339ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
-  TS_tx_clk_gmii = PERIOD TIMEGRP "tx_clock | SETUP   |     0.029ns|     7.971ns|       0|           0
+  TS_tx_clk_gmii = PERIOD TIMEGRP "tx_clock | SETUP   |     0.079ns|     7.921ns|       0|           0
   _gmii" 8 ns HIGH 50%                      | HOLD    |     0.342ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
-  TS_rx_clk = PERIOD TIMEGRP "rx_clock" 8 n | SETUP   |     0.110ns|     7.890ns|       0|           0
+  TS_rx_clk = PERIOD TIMEGRP "rx_clock" 8 n | SETUP   |     0.084ns|     7.916ns|       0|           0
   s HIGH 50%                                | HOLD    |     0.219ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
   TS_rgmii_falling_to_rising = MAXDELAY FRO | SETUP   |     1.116ns|     2.084ns|       0|           0
@@ -193,18 +261,18 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 5 mins 18 secs 
-Total CPU time to PAR completion: 5 mins 14 secs 
+Total REAL time to PAR completion: 3 mins 14 secs 
+Total CPU time to PAR completion: 3 mins 13 secs 
 
-Peak Memory Usage:  1319 MB
+Peak Memory Usage:  1281 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 Timing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 0
-Number of info messages: 1
+Number of warning messages: 1
+Number of info messages: 2
 
 Writing design to file nf2_top_par.ncd
 

@@ -4,7 +4,7 @@ Loading device for application Rf_Device from file '2vp50.nph' in environment
 /Xilinx/10.1/ISE.
    "nf2_top" is an NCD, version 3.2, device xc2vp50, package ff1152, speed -7
 
-Mon Feb  7 11:21:50 2011
+Thu Mar  3 15:53:52 2011
 
 /Xilinx/10.1/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -g Binary:No -w nf2_top_par.ncd 
 
@@ -134,6 +134,30 @@ Summary of Bitgen Options:
  ** The specified setting matches the default setting.
 
 Running DRC.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/state_nxt_not0001 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/send_pkt_not0001 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/cam_cmp_or0000 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/port_dstaddr_not0005 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/cam_en_not0001 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/output_port_lookup/cam_we_not0001 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:1060 - Dangling pins on
    block:<nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
    _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
@@ -674,6 +698,78 @@ WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
 WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
    block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full
    _thresh_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB0> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB1> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB2> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB3> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB6> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB7> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB8> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB9> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB10> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB11> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB12> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB13> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB16> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB17> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB18> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<nf2_core/user_data_path/output_port_lookup/port/BU2/U0/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v2_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
 WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
    block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
    _hi_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
@@ -752,7 +848,7 @@ WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
 WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
    block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr
    _hi_reg/ram/Mram_ram.B>:<RAMB16_RAMB16B>.
-DRC detected 0 errors and 178 warnings.  Please see the previously displayed
+DRC detected 0 errors and 208 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "nf2_top_par.bit".

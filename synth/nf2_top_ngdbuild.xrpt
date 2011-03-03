@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Mon Feb  7 11:08:26 2011">
+  <application stringID="NgdBuild" timeStamp="Thu Mar  3 15:42:24 2011">
     <task stringID="NGDBUILD_REPORT">
       <section stringID="NGDBUILD_DESIGN_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
@@ -18,6 +18,10 @@
         <item COUNT="4" stringID="NGDBUILD_CORE" value="fifo_generator_v3_2, Xilinx CORE Generator 10.1.03_ip3"/>
         <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
           <section stringID="NGDBUILD_CORE_INSTANCES">
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="cam_mac">
+              <item stringID="NGDBUILD_CORE_INFO" type="cam_v6_1" value="cam_mac"/>
+              <item c_addr_type="0" c_cmp_data_mask_width="48" c_cmp_din_width="48" c_data_mask_width="48" c_depth="16" c_din_width="48" c_has_cmp_data_mask="0" c_has_cmp_din="1" c_has_data_mask="0" c_has_en="1" c_has_multiple_match="0" c_has_read_warning="0" c_has_single_match="0" c_has_we="1" c_has_wr_addr="1" c_match_addr_width="4" c_match_resolution_type="0" c_mem_init="0" c_mem_init_file="no_coe_file_loaded" c_mem_type="0" c_read_cycles="1" c_reg_outputs="0" c_ternary_mode="0" c_width="48" c_wr_addr_width="4" component_name="cam_mac" stringID="NGDBUILD_CORE_PARAMETERS" value="cam_mac"/>
+            </scope>
             <scope stringID="NGDBUILD_CORE_INSTANCE" value="cdq_rx_fifo_512x36_to_72">
               <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v4_2" value="cdq_rx_fifo_512x36_to_72"/>
               <item c_common_clock="0" c_data_count_width="10" c_din_width="36" c_dout_rst_val="0" c_dout_width="72" c_full_flags_rst_val="1" c_has_almost_empty="0" c_has_almost_full="1" c_has_data_count="0" c_has_int_clk="0" c_has_overflow="0" c_has_rd_data_count="0" c_has_rst="1" c_has_srst="0" c_has_underflow="0" c_has_valid="0" c_has_wr_ack="0" c_has_wr_data_count="0" c_implementation_type="2" c_memory_type="1" c_overflow_low="0" c_preload_latency="0" c_preload_regs="1" c_prim_fifo_type="1kx36" c_prog_empty_thresh_assert_val="4" c_prog_empty_thresh_negate_val="5" c_prog_empty_type="0" c_prog_full_thresh_assert_val="527" c_prog_full_thresh_negate_val="526" c_prog_full_type="1" c_rd_data_count_width="8" c_rd_depth="512" c_rd_freq="125" c_rd_pntr_width="9" c_underflow_low="0" c_use_dout_rst="1" c_use_ecc="0" c_use_embedded_reg="0" c_use_fwft_data_count="1" c_valid_low="0" c_wr_ack_low="0" c_wr_data_count_width="9" c_wr_depth="1024" c_wr_freq="125" c_wr_pntr_width="10" component_name="cdq_rx_fifo_512x36_to_72" stringID="NGDBUILD_CORE_PARAMETERS" value="cdq_rx_fifo_512x36_to_72"/>
@@ -33,6 +37,10 @@
             <scope stringID="NGDBUILD_CORE_INSTANCE" value="pci2net_16x60">
               <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v4_2" value="pci2net_16x60"/>
               <item c_common_clock="0" c_data_count_width="4" c_din_width="60" c_dout_rst_val="0" c_dout_width="60" c_full_flags_rst_val="1" c_has_almost_empty="0" c_has_almost_full="1" c_has_data_count="0" c_has_int_clk="0" c_has_overflow="0" c_has_rd_data_count="0" c_has_rst="1" c_has_srst="0" c_has_underflow="0" c_has_valid="0" c_has_wr_ack="0" c_has_wr_data_count="0" c_implementation_type="2" c_memory_type="1" c_overflow_low="0" c_preload_latency="1" c_preload_regs="0" c_prim_fifo_type="512x72" c_prog_empty_thresh_assert_val="2" c_prog_empty_thresh_negate_val="3" c_prog_empty_type="0" c_prog_full_thresh_assert_val="10" c_prog_full_thresh_negate_val="9" c_prog_full_type="1" c_rd_data_count_width="4" c_rd_depth="16" c_rd_freq="125" c_rd_pntr_width="4" c_underflow_low="0" c_use_dout_rst="1" c_use_ecc="0" c_use_embedded_reg="0" c_use_fwft_data_count="0" c_valid_low="0" c_wr_ack_low="0" c_wr_data_count_width="4" c_wr_depth="16" c_wr_freq="66" c_wr_pntr_width="4" component_name="pci2net_16x60" stringID="NGDBUILD_CORE_PARAMETERS" value="pci2net_16x60"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="ram_mem">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v2_8" value="ram_mem"/>
+              <item c_addra_width="4" c_addrb_width="4" c_algorithm="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_has_ena="0" c_has_enb="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_ssra="0" c_has_ssrb="0" c_init_file_name="no_coe_file_loaded" c_load_init_file="0" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="16" c_read_depth_b="16" c_read_width_a="56" c_read_width_b="56" c_sim_collision_check="ALL" c_sinita_val="0" c_sinitb_val="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_ramb16bwer_rst_bhv="0" c_wea_width="1" c_web_width="1" c_write_depth_a="16" c_write_depth_b="16" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="56" c_write_width_b="56" component_name="ram_mem" stringID="NGDBUILD_CORE_PARAMETERS" value="ram_mem"/>
             </scope>
             <scope stringID="NGDBUILD_CORE_INSTANCE" value="rxfifo_8kx9_to_72">
               <item stringID="NGDBUILD_CORE_INFO" type="fifo_generator_v3_2" value="rxfifo_8kx9_to_72"/>

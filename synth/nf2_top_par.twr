@@ -68,24 +68,24 @@ Timing constraint: TS_rgmii_falling_to_rising = MAXDELAY FROM TIMEGRP
 ================================================================================
 Timing constraint: TS_rx_clk = PERIOD TIMEGRP "rx_clock" 8 ns HIGH 50%;
 
- 43712 paths analyzed, 2096 endpoints analyzed, 0 failing endpoints
+ 64432 paths analyzed, 2096 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum period is   7.890ns.
+ Minimum period is   7.916ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: TS_tx_clk_gmii = PERIOD TIMEGRP "tx_clock_gmii" 8 ns HIGH 
 50%;
 
- 42280 paths analyzed, 1228 endpoints analyzed, 0 failing endpoints
+ 42272 paths analyzed, 1228 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum period is   7.971ns.
+ Minimum period is   7.921ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: TS_cpci_clk = PERIOD TIMEGRP "cpci_clk" 16 ns HIGH 50%;
 
- 7722 paths analyzed, 785 endpoints analyzed, 0 failing endpoints
+ 7705 paths analyzed, 785 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
  Minimum period is  14.866ns.
 --------------------------------------------------------------------------------
@@ -94,9 +94,9 @@ Timing constraint: TS_cpci_clk = PERIOD TIMEGRP "cpci_clk" 16 ns HIGH 50%;
 Timing constraint: TS_core_clk_int = PERIOD TIMEGRP "core_clk_int" 8 ns HIGH 
 50%;
 
- 1111560 paths analyzed, 27978 endpoints analyzed, 0 failing endpoints
+ 1111137 paths analyzed, 28417 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum period is   8.000ns.
+ Minimum period is   7.966ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -825,8 +825,8 @@ Clock to Setup on destination clock core_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-core_clk       |    8.000|         |         |         |
-cpci_clk       |    8.000|         |         |         |
+core_clk       |    7.966|         |         |         |
+cpci_clk       |    7.966|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock cpci_clk
@@ -834,7 +834,7 @@ Clock to Setup on destination clock cpci_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-core_clk       |    8.000|         |         |         |
+core_clk       |    7.966|         |         |         |
 cpci_clk       |   14.866|         |         |         |
 ---------------+---------+---------+---------+---------+
 
@@ -843,7 +843,7 @@ Clock to Setup on destination clock gtx_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-gtx_clk        |    7.971|         |    2.063|    1.687|
+gtx_clk        |    7.921|         |    2.063|    1.687|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rgmii_0_rxc
@@ -851,7 +851,7 @@ Clock to Setup on destination clock rgmii_0_rxc
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-rgmii_0_rxc    |    7.500|    1.276|         |    1.481|
+rgmii_0_rxc    |    7.530|    1.276|         |    1.481|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rgmii_1_rxc
@@ -859,7 +859,7 @@ Clock to Setup on destination clock rgmii_1_rxc
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-rgmii_1_rxc    |    7.890|    2.084|         |    1.831|
+rgmii_1_rxc    |    7.878|    2.084|         |    1.831|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rgmii_2_rxc
@@ -867,7 +867,7 @@ Clock to Setup on destination clock rgmii_2_rxc
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-rgmii_2_rxc    |    7.531|    1.301|         |    1.562|
+rgmii_2_rxc    |    7.501|    1.301|         |    1.562|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rgmii_3_rxc
@@ -875,7 +875,7 @@ Clock to Setup on destination clock rgmii_3_rxc
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-rgmii_3_rxc    |    7.877|    1.548|         |    1.594|
+rgmii_3_rxc    |    7.916|    1.548|         |    1.594|
 ---------------+---------+---------+---------+---------+
 
 TIMEGRP "CPCI_DATA" OFFSET = OUT 10 ns AFTER COMP "cpci_clk";
@@ -1130,7 +1130,7 @@ Timing summary:
 
 Timing errors: 0  Score: 0
 
-Constraints cover 1205793 paths, 4 nets, and 93586 connections
+Constraints cover 1226065 paths, 4 nets, and 94823 connections
 
 Design statistics:
    Minimum period:  14.866ns   (Maximum frequency:  67.268MHz)
@@ -1140,14 +1140,14 @@ Design statistics:
    Minimum output required time after clock:   4.689ns
 
 
-Analysis completed Mon Feb  7 11:21:41 2011 
+Analysis completed Thu Mar  3 15:53:43 2011 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 915 MB
+Peak Memory Usage: 938 MB
 
 
 

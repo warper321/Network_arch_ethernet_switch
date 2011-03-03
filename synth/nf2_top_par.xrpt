@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Mon Feb  7 11:16:06 2011">
+  <application stringID="par" timeStamp="Thu Mar  3 15:50:19 2011">
     <task stringID="PAR_DEVICE_UTILIZATION">
       <section stringID="PAR_DEVICE_UTLIZATION">
         <item AVAILABLE="692" dataType="int" stringID="PAR_EXTERNAL_IOB" value="356">
@@ -15,12 +15,12 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="5 mins 2 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="5 mins 1 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="2 mins 48 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="2 mins 48 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="5 mins 18 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="5 mins 14 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="3 mins 14 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="3 mins 13 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -35,6 +35,17 @@
           <row stringID="row" value="6"></row>
           <row stringID="row" value="7"></row>
           <row stringID="row" value="8"></row>
+          <row stringID="row" value="9"></row>
+          <row stringID="row" value="10"></row>
+          <row stringID="row" value="11"></row>
+          <row stringID="row" value="12"></row>
+          <row stringID="row" value="13"></row>
+          <row stringID="row" value="14"></row>
+          <row stringID="row" value="15"></row>
+          <row stringID="row" value="16"></row>
+          <row stringID="row" value="17"></row>
+          <row stringID="row" value="18"></row>
+          <row stringID="row" value="19"></row>
         </table>
       </section>
       <section stringID="PAR_PAD_PIN_REPORT"></section>
