@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
 // Module: registers.v
-// Project: Ethernet Hub (ethernet_hub)
+// Project: Ethernet Hub (Network_arch_ethernet_switch)
 // Description: Project specific register defines
 //
 //              Ethernet Hub
@@ -16,7 +16,7 @@
 `define DEVICE_MAJOR       1
 `define DEVICE_MINOR       1
 `define DEVICE_REVISION    0
-`define DEVICE_PROJ_DIR    "ethernet_hub"
+`define DEVICE_PROJ_DIR    "Network_arch_ethernet_switch"
 `define DEVICE_PROJ_NAME   "Ethernet Hub"
 `define DEVICE_PROJ_DESC   "Ethernet Hub"
 
